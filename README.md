@@ -47,3 +47,6 @@ As a user I want to be able to chat with other users currently playing in the ca
 As a user I want to be able to play a game with other users at the same time (concurrent gaming)
 
 As a user I want to be able to play blackjack (concurrent gaming)
+
+## Block Diagram:
+![A block diagram representing our architecture](BlockDiagram.png "Block Diagram")
