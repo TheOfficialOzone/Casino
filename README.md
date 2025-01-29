@@ -31,6 +31,7 @@ The stakeholders of our project are us (the dev team)
 ## Technologies
 
 - Ruby on rails
+- SQLite
 
 ## User stories
 
