@@ -186,6 +186,9 @@ GEM
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
+    postgresql (1.0.0)
+      pg
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -365,6 +368,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  postgresql (~> 1.0)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)
