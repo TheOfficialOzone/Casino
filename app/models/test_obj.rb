@@ -1,0 +1,2 @@
+class TestObj < ApplicationRecord
+end
