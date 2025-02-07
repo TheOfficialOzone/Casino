@@ -13,6 +13,6 @@ class LobbyController < ApplicationController
   # When the horse racing button is pressed, the user is redirected to that games page.
   def horse_racing
     flash[:notice] = "Bet on zoolander, he's my favourite!"
-    redirect_to home_path # Once the path for the horse racing is finished, replace it
+    redirect_to horse_race_betting_path
   end
 end

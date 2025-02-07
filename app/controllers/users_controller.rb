@@ -1,5 +1,7 @@
 # This class handles the logic for user account creation, and viewing user information
 class UsersController < ApplicationController
+  STARTING_BALANCE = 1000.00
+
   allow_unauthenticated_access only: %i[new create]
   rate_limit to: 10, within: 3.minutes, only: :create, with: -> { redirect_to users_new_path, alert: "Try again later." }
 
@@ -9,6 +11,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.balance = STARTING_BALANCE
     if @user.save
       # Start new session after creating account
       if (user = User.authenticate_by(auth_params))
