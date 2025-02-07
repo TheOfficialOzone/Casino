@@ -85,6 +85,9 @@ GEM
     brakeman (7.0.0)
       racc
     builder (3.3.0)
+    bundler-audit (0.9.2)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -186,6 +189,9 @@ GEM
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
+    postgresql (1.0.0)
+      pg
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -361,11 +367,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  bundler-audit (~> 0.9.2)
   capybara
   debug
   importmap-rails
   jbuilder
   kamal
+  postgresql (~> 1.0)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)

@@ -61,3 +61,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+gem "postgresql", "~> 1.0"
+
+gem "bundler-audit", "~> 0.9.2"
