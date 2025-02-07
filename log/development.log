@@ -804,6 +804,7 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 18ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+<<<<<<< HEAD
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
   [1m[35m (8.2ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
@@ -10437,3 +10438,311 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+=======
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 72ms (Views: 14.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:04 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | GC: 0.0ms)
+Completed 200 OK in 77ms (Views: 16.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:59:55 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'lobby.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'lobby.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'lobby.css' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: </head>
+    4: 
+    5: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:2
+
+Information for cause: Propshaft::MissingAssetError (The asset 'lobby.css' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:2
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-07 11:59:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:00:12 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 11.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-e8dc057d.css" for 127.0.0.1 at 2025-02-07 12:00:12 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:00:13 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:35 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.1ms)
+
+
+Started GET "/assets/lobby-7bba3967.css" for 127.0.0.1 at 2025-02-07 12:19:35 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:36 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | GC: 0.0ms)
+Completed 200 OK in 72ms (Views: 15.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:21:00 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 10.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-89f44e78.css" for 127.0.0.1 at 2025-02-07 12:21:00 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 7.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | GC: 0.0ms)
+Completed 200 OK in 65ms (Views: 23.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-d28c4f21.css" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Unable to resolve 'Carpet.jpg' for missing asset 'Carpet.jpg' in lobby.css
+Started GET "/assets/Carpet.jpg" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:28:42 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:05 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 8.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000012d414758>::Carpet)
+Caused by: NameError (uninitialized constant #<Class:0x000000012d414758>::Carpet)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x000000012d414758>::Carpet):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%image_tag Carpet.jpg%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: NameError (uninitialized constant #<Class:0x000000012d414758>::Carpet):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:26 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 1.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+  
+ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%image_tag "Carpet.jpg"%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:34 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%= image_tag "Carpet.jpg"%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 35.5ms | GC: 8.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | GC: 8.3ms)
+Completed 200 OK in 78ms (Views: 44.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.7ms)
+
+
+Started GET "/assets/lobby-eefb9a87.css" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Started GET "/assets/carpet-a180852b.jpg" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:34:02 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 22.9ms | GC: 2.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | GC: 2.6ms)
+Completed 200 OK in 63ms (Views: 25.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/assets/lobby-f7a14675.css" for 127.0.0.1 at 2025-02-07 12:34:03 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:34:44 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 62.9ms | GC: 31.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 65.3ms | GC: 31.2ms)
+Completed 200 OK in 99ms (Views: 66.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 31.2ms)
+
+
+Started GET "/assets/lobby-51e24441.css" for 127.0.0.1 at 2025-02-07 12:34:44 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:35:28 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:36:55 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 23.2ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | GC: 1.8ms)
+Completed 200 OK in 68ms (Views: 29.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/assets/lobby-756b8667.css" for 127.0.0.1 at 2025-02-07 12:36:55 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:36:56 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:37:10 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 18.0ms | GC: 2.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | GC: 2.4ms)
+Completed 200 OK in 60ms (Views: 19.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/assets/lobby-1d2a3609.css" for 127.0.0.1 at 2025-02-07 12:37:10 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:37:35 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 15.4ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | GC: 1.0ms)
+Completed 200 OK in 56ms (Views: 20.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/assets/lobby-45750f5b.css" for 127.0.0.1 at 2025-02-07 12:37:35 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:38:37 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 37.9ms | GC: 17.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | GC: 17.8ms)
+Completed 200 OK in 92ms (Views: 39.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 29.9ms)
+
+
+Started GET "/assets/lobby-b515554c.css" for 127.0.0.1 at 2025-02-07 12:38:37 -0600
+>>>>>>> 202f82f ([#33] Add background image & CSS styling.)
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m

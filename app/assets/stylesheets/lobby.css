@@ -1,0 +1,18 @@
+button {
+    color : #444
+}
+h1, h2 {
+    background-color: darkgreen;
+    color: white;
+}
+p {
+    background-color: darkgreen;
+    color: white;
+}
+body {
+    background-color: darkgreen;
+    background-image: url('carpet.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
