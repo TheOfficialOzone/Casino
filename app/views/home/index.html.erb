@@ -1,0 +1,9 @@
+<h1>Horse Racing</h1>
+<div>
+<% @horses.each do |horse| %>
+    <%= image_tag 'horse1.jpg',
+	width: 200,
+	id: 'animated-image',
+	style: "animation-duration: #{horse.speed}s; animation-timing-function: #{horse.timing};" %>
+<% end %>
+</div>

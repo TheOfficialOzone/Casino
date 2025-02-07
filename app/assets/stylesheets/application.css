@@ -8,3 +8,13 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+#animated-image {
+    position: absolute;
+    animation: moveImage linear;
+}
+
+@keyframes moveImage {
+    0%   {left: 0%;}
+    100% {left: 100%}
+}
