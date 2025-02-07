@@ -7,9 +7,9 @@
 name: "Ruby on Rails CI"
 on:
   push:
-    branches: [ "main", "dev", "45-continous-integration" ]
+    branches: [ "main", "dev", "45-continuous-integration" ]
   pull_request:
-    branches: [ "main", "dev", "45-continous-integration" ]
+    branches: [ "main", "dev", "45-continuous-integration" ]
 jobs:
   test:
     runs-on: ubuntu-latest
