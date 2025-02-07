@@ -10054,6 +10054,7 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-16 17:16:52 -0600
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+<<<<<<< HEAD
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 Started GET "/" for 127.0.0.1 at 2025-02-17 14:50:10 -0600
@@ -10439,6 +10440,8 @@ Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 =======
+>>>>>>> e68e7e7 ([#33] Add background image & CSS styling.)
+=======
 Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:03 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
 Processing by LobbyController#index as HTML
@@ -10744,5 +10747,10 @@ Completed 200 OK in 92ms (Views: 39.9ms | ActiveRecord: 0.0ms (0 queries, 0 cach
 
 Started GET "/assets/lobby-b515554c.css" for 127.0.0.1 at 2025-02-07 12:38:37 -0600
 >>>>>>> 202f82f ([#33] Add background image & CSS styling.)
+<<<<<<< HEAD
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+=======
+>>>>>>> e68e7e7 ([#33] Add background image & CSS styling.)
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
