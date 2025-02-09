@@ -1,4 +1,28 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let milliseconds = 0;
+      let seconds = 0;
+      let timerElement = document.getElementById("timer");
+
+      function updateTimer() {
+	  milliseconds += 10;
+	  if(milliseconds == 1000) {
+	      milliseconds = 0;
+	      seconds++;
+	  }
+	  timerElement.innerHTML =
+              (seconds < 10 ? "0" + seconds : seconds) + ":" +
+              (milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds);
+      }
+      setInterval(updateTimer, 10);
+  });
+</script>
+
+
 <h1>Horse Racing</h1>
+
+<div id="timer">00:000</div>
+
 <div>
 <% @horses.each do |horse| %>
     <%= image_tag 'horse1.png',
