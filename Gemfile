@@ -71,5 +71,3 @@ end
 gem "postgresql", "~> 1.0"
 
 gem "bundler-audit", "~> 0.9.2"
-
-gem "net-smtp", "= 0.5.0"
