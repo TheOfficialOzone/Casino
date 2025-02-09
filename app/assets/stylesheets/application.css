@@ -12,6 +12,7 @@
 #animated-image {
     position: absolute;
     animation: moveImage linear;
+    animation-fill-mode: forwards;
 }
 
 @keyframes moveImage {
