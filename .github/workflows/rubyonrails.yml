@@ -42,10 +42,6 @@ jobs:
       #           sleep 5
       #       done
       # Add or replace database setup steps here
-      - name: Wait for MySQL to launch
-        run: |
-            sleep 10
-            mysql -h 127.0.0.1 -u root -proot -e "SHOW DATABASES;"
       - name: Set up database schema
         env:
           RAILS_ENV: test
