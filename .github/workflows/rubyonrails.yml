@@ -33,6 +33,13 @@ jobs:
         with:
           ruby-version: '3.4.1'
           bundler-cache: true
+
+      - name: Wait for MySQL to be ready
+        run: |
+            until mysql -h 127.0.0.1 -u root -proot -e "SHOW DATABASES;"; do
+                echo "Waiting for MySQL to be ready..."
+                sleep 5
+            done
       # Add or replace database setup steps here
       - name: Set up database schema
         env:
