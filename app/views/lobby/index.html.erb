@@ -1,5 +1,5 @@
 <h1>Casino</h1>
 <p>This is the basic building block for the casino lobby</p>
-<button>Logout</button>
+<%= button_to "Logout", logout_lobby_path, method: :post, remote: true %>
 <h2>Games:</h2>
-<button>Horse Racing</button>
+<%= button_to "Horse Racing", horse_racing_lobby_path, method: :post, remote: true %>
