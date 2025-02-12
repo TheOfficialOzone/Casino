@@ -11,4 +11,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resource :session
+  resources :passwords, param: :token
+
+  resources :users
 end
