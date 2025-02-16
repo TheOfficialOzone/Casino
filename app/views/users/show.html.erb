@@ -1,0 +1,6 @@
+<h1>Account information</h1>
+
+Username: <%= @user.username %><br/>
+Email address: <%= @user.email_address %><br/>
+
+Balance: $<%= number_with_precision(@user.balance, precision: 2, delimiter: ",") %>

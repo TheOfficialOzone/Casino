@@ -1,0 +1,15 @@
+<h1>Sign in</h1>
+
+<%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
+<%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
+
+<%= form_with model: @session, url: session_path do |form| %>
+  <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your username or email address", value: params[:username] %><br>
+  <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72 %><br>
+  <%= form.submit "Sign in" %>
+<% end %>
+<br>
+
+<%= link_to "Forgot password?", new_password_path %>
+
+<br/>No account? <%= link_to "Create one here", new_user_path %>.
