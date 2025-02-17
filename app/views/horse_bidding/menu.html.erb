@@ -1,4 +1,7 @@
-<div class="container">
+
+<button onClick="showBettingMenu()">Show Menu</button>
+
+<div id="main_betting_menu" class="container">
     <div class="horse_container">
         <div class="horse_name_div"><text class="horse_name">Hanzel</text></div>
         <img class="horse_img" src="https://signin.juliegoodnight.com/wp-content/uploads/2021/05/woodrow-rearing-square.jpg">
@@ -131,9 +134,19 @@
             </button>
         </div>
     </div>
+    <button onClick="hideBettingMenu()">Hide Menu</button>
 </div>
 
 <script>
+
+function showBettingMenu() {
+    document.getElementById("main_betting_menu").style.visibility = 'visible';
+}
+
+function hideBettingMenu() {
+    document.getElementById("main_betting_menu").style.visibility = 'hidden';
+}
+
 let cash = 100;
 let test_ratio = ""
 
@@ -147,7 +160,6 @@ function getBetValue(char, id) {
 
     return parseFloat(bet_value_str);
 }
-
 
 function isNumberKey(evt, id) {
     var charCode = (evt.which) ? evt.which : evt.keyCode
@@ -319,6 +331,7 @@ input::-webkit-inner-spin-button {
 
 /* For the Grid with the horses */
 .container {
+    /* visibility: hidden; */
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, auto);
