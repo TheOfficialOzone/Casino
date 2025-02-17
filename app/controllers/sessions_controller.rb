@@ -8,12 +8,12 @@ class SessionsController < ApplicationController
 
   def create
     # User can log in with either email or username, so make both parameters the same
-    params[:email_address] = params[:username]
+    params[:session][:email_address] = params[:session][:username]
 
     # Try authenticating with username, then email address
     user = User.authenticate_by(session_params_username)
     if not user
-      user = User.authenticate_by(session_params_password)
+      user = User.authenticate_by(session_params_email)
     end
 
     if user

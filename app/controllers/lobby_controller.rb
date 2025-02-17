@@ -1,7 +1,5 @@
 class LobbyController < ApplicationController
-  # include Authentication
-
-  # allow_unauthenticated_access
+  allow_unauthenticated_access
 
   def index
     puts "A gambler has entered the casino lobby"
