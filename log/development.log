@@ -4576,3 +4576,40 @@ Processing by HorseBiddingController#menu as HTML
 Completed 200 OK in 31ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | GC: 0.0ms)
+Completed 200 OK in 77ms (Views: 16.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-9735cbd0.css" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/horse1-a797efc9.png" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "//" for 127.0.0.1 at 2025-02-17 16:50:41 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//" for 127.0.0.1 at 2025-02-17 16:50:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 8.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
