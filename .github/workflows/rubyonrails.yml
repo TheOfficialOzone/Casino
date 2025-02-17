@@ -7,7 +7,7 @@
 name: "Ruby on Rails CI"
 on:
   push:
-    branches: [ "main", "dev", "45-continuous-integration-mysql", "53-db-version" ]
+    branches: [ "main", "dev", "45-continuous-integration-mysql" ]
   pull_request:
     branches: [ "main", "dev", "45-continuous-integration-mysql" ]
 jobs:
