@@ -28,11 +28,4 @@ Rails.application.routes.draw do
   resources :passwords, param: :token
 
   resources :users
-  root "lobby#index"
-
-  resource :session
-
-  get "/lobby", to: "lobby#index"
-  post "/lobby/logout", to: "lobby#logout", as: :logout_lobby
-  post "/lobby/horse_racing", to: "lobby#horse_racing", as: :horse_racing_lobby
 end
