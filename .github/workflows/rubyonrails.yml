@@ -7,7 +7,7 @@
 name: "Ruby on Rails CI"
 on:
   push:
-    branches: [ "main", "dev", "45-continuous-integration-mysql" ]
+    branches: [ "main", "dev", "45-continuous-integration-mysql", "53-db-version" ]
   pull_request:
     branches: [ "main", "dev", "45-continuous-integration-mysql" ]
 jobs:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       mysql:
-        image: mysql:5.7
+        image: mysql:lts
         ports:
           - "3306:3306"
         env:
