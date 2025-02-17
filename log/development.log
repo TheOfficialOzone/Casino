@@ -9,7 +9,7 @@ Completed 200 OK in 65ms (Views: 5.0ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/" for 127.0.0.1 at 2025-02-05 17:01:38 -0600
-  
+
 ActiveRecord::NoDatabaseError (We could not find your database: casino_development. Available database configurations can be found in config/database.yml.
 
 To resolve this error:
@@ -32,7 +32,7 @@ To resolve this error:
 
 - Has the database name changed? Verify that config/database.yml contains the correct database name.
 ):
-  
+
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in `connect'
@@ -105,7 +105,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: Mysql2::Error (Unknown database 'casino_development'):
-  
+
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `connect'
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `initialize'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -179,7 +179,7 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-05 17:01:38 -0600
-  
+
 ActiveRecord::NoDatabaseError (We could not find your database: casino_development. Available database configurations can be found in config/database.yml.
 
 To resolve this error:
@@ -202,7 +202,7 @@ To resolve this error:
 
 - Has the database name changed? Verify that config/database.yml contains the correct database name.
 ):
-  
+
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in `connect'
@@ -275,7 +275,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: Mysql2::Error (Unknown database 'casino_development'):
-  
+
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `connect'
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `initialize'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -401,7 +401,7 @@ Completed 200 OK in 17ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 Started GET "/" for 127.0.0.1 at 2025-02-06 18:59:49 -0600
-  
+
 ActiveRecord::NoDatabaseError (We could not find your database: casino_development. Available database configurations can be found in config/database.yml.
 
 To resolve this error:
@@ -424,7 +424,7 @@ To resolve this error:
 
 - Has the database name changed? Verify that config/database.yml contains the correct database name.
 ):
-  
+
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in `connect'
@@ -497,7 +497,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: Mysql2::Error (Unknown database 'casino_development'):
-  
+
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `connect'
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `initialize'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -571,7 +571,7 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-06 18:59:49 -0600
-  
+
 ActiveRecord::NoDatabaseError (We could not find your database: casino_development. Available database configurations can be found in config/database.yml.
 
 To resolve this error:
@@ -594,7 +594,7 @@ To resolve this error:
 
 - Has the database name changed? Verify that config/database.yml contains the correct database name.
 ):
-  
+
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new_client'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in `connect'
@@ -667,7 +667,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: Mysql2::Error (Unknown database 'casino_development'):
-  
+
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `connect'
 mysql2 (0.5.6) lib/mysql2/client.rb:97:in `initialize'
 activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
@@ -896,9 +896,9 @@ Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 
 
 Started GET "/passwords/edit" for 127.0.0.1 at 2025-02-11 22:14:46 -0600
-  
+
 AbstractController::ActionNotFound (The action 'show' could not be found for PasswordsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -955,13 +955,13 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-11 22:14:46 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/passwords" for 127.0.0.1 at 2025-02-11 22:14:49 -0600
-  
+
 AbstractController::ActionNotFound (The action 'index' could not be found for PasswordsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -1018,9 +1018,9 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/session/" for 127.0.0.1 at 2025-02-11 22:14:55 -0600
-  
+
 AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -1077,9 +1077,9 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/passwords/reset" for 127.0.0.1 at 2025-02-11 22:16:03 -0600
-  
+
 AbstractController::ActionNotFound (The action 'show' could not be found for PasswordsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -1145,21 +1145,21 @@ Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 
 
 Started GET "/rails" for 127.0.0.1 at 2025-02-11 22:16:33 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/rails"):
-  
+
 Started GET "/session/index" for 127.0.0.1 at 2025-02-11 22:18:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/session/index"):
-  
+
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-11 22:18:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/session" for 127.0.0.1 at 2025-02-11 22:18:12 -0600
-  
+
 AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -1216,9 +1216,9 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/session/show" for 127.0.0.1 at 2025-02-11 22:18:31 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/session/show"):
-  
+
 Started GET "/session/new" for 127.0.0.1 at 2025-02-11 22:18:59 -0600
 Processing by SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -1229,17 +1229,17 @@ Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/sessions/new" for 127.0.0.1 at 2025-02-11 22:19:01 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/sessions/new"):
-  
+
 Started GET "/sessions" for 127.0.0.1 at 2025-02-11 22:20:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/sessions"):
-  
+
 Started GET "/session/edit" for 127.0.0.1 at 2025-02-11 22:20:32 -0600
-  
+
 AbstractController::ActionNotFound (The action 'edit' could not be found for SessionsController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -1792,33 +1792,33 @@ Completed 200 OK in 18ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/usrs/new" for 127.0.0.1 at 2025-02-14 16:17:38 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/usrs/new"):
-  
+
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-14 16:17:38 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/usrs/new" for 127.0.0.1 at 2025-02-14 16:18:54 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/usrs/new"):
-  
+
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 Started GET "/usrs/new" for 127.0.0.1 at 2025-02-14 16:19:01 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/usrs/new"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:19:26 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end' or dummy end):
-  
+
 app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:19:51 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting `end' or dummy end):
-  
+
 app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:20:06 -0600
 Processing by UsersController#new as HTML
@@ -1829,36 +1829,36 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `user_path' for an instance of #<Class:0x00007cbf99997d18>)
 Caused by: NameError (undefined local variable or method `user_path' for an instance of #<Class:0x00007cbf99997d18>)
 
 Information for: ActionView::Template::Error (undefined local variable or method `user_path' for an instance of #<Class:0x00007cbf99997d18>):
-    2: 
+    2:
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: <%= form_with url: user_path do |form| %>
     6:   <%= form.username_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     7:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
     8:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:5
 
 Information for cause: NameError (undefined local variable or method `user_path' for an instance of #<Class:0x00007cbf99997d18>):
-  
+
 app/views/users/new.html.erb:5
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 16:21:12 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/get/passwords" for 127.0.0.1 at 2025-02-14 16:21:37 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/get/passwords"):
-  
+
 Started GET "/get/password" for 127.0.0.1 at 2025-02-14 16:21:43 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/get/password"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:24:12 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -1868,24 +1868,24 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `username_field' for an instance of ActionView::Helpers::FormBuilder)
 Caused by: NoMethodError (undefined method `username_field' for an instance of ActionView::Helpers::FormBuilder)
 
 Information for: ActionView::Template::Error (undefined method `username_field' for an instance of ActionView::Helpers::FormBuilder):
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: <%= form_with url: users_create_path do |form| %>
     6:   <%= form.username_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     7:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
     8:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
     9:   <%= form.submit "Create account" %>
-  
+
 app/views/users/new.html.erb:6
 app/views/users/new.html.erb:5
 
 Information for cause: NoMethodError (undefined method `username_field' for an instance of ActionView::Helpers::FormBuilder):
-  
+
 app/views/users/new.html.erb:6
 app/views/users/new.html.erb:5
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:28:27 -0600
@@ -1911,7 +1911,7 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:10: trailing `_' in number
     format: { with: [a-zA-Z0-9_-]*, message: "Username must ...
                               ^
@@ -1919,7 +1919,7 @@ SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:10: traili
 ...  format: { with: [a-zA-Z0-9_-]*, message: "Username must on...
 ...                              ^
 ):
-  
+
 app/models/user.rb:10: trailing `_' in number
 app/models/user.rb:10: syntax error, unexpected ']'
 app/controllers/users_controller.rb:9:in `create'
@@ -1938,7 +1938,7 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:10: syntax error, unexpected backslash, expecting '}'
     format: { with: \[a-zA-Z0-9_-\]+, message: "Us...
                     ^
@@ -1946,7 +1946,7 @@ SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:10: syntax
 ...   format: { with: \[a-zA-Z0-9_-\]+, message: "Username must...
 ...                              ^
 ):
-  
+
 app/models/user.rb:10: syntax error, unexpected backslash, expecting '}'
 app/models/user.rb:10: trailing `_' in number
 app/controllers/users_controller.rb:9:in `create'
@@ -1965,12 +1965,12 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:10: syntax error, unexpected ','
 ...  format: { with: [a-zA-Z0-9]+, message: "Username must only...
 ...                              ^
 ):
-  
+
 app/models/user.rb:10: syntax error, unexpected ','
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:38:22 -0600
@@ -1988,12 +1988,12 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/models/user.rb:12: syntax error, unexpected ':', expecting `end' or dummy end
     uniqueness: { case_sensitive: false, mes...
               ^
 ):
-  
+
 app/models/user.rb:12: syntax error, unexpected ':', expecting `end' or dummy end
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:40:09 -0600
@@ -2011,9 +2011,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:20:in `user_params'
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:40:12 -0600
@@ -2026,9 +2026,9 @@ Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 16:40:32 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/" for 127.0.0.1 at 2025-02-14 16:40:37 -0600
 Processing by Rails::WelcomeController#index as HTML
   Rendering /home/gobbo/.gem/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
@@ -2037,9 +2037,9 @@ Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 16:40:40 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:41:30 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2055,9 +2055,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:20:in `user_params'
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:41:40 -0600
@@ -2070,9 +2070,9 @@ Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routs" for 127.0.0.1 at 2025-02-14 16:42:41 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routs"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:44:09 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2088,9 +2088,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:20:in `user_params'
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:44:25 -0600
@@ -2120,9 +2120,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:20:in `user_params'
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:46:30 -0600
@@ -2135,9 +2135,9 @@ Completed 200 OK in 13ms (Views: 4.1ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 16:47:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/assets" for 127.0.0.1 at 2025-02-14 16:47:50 -0600
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:59:32 -0600
 Processing by UsersController#new as HTML
@@ -2154,9 +2154,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:21:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 16:59:44 -0600
@@ -2174,9 +2174,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:20:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:01:05 -0600
@@ -2194,9 +2194,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:22:in `user_params'
 app/controllers/users_controller.rb:9:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:02:08 -0600
@@ -2214,9 +2214,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:05:55 -0600
@@ -2234,9 +2234,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:10:00 -0600
@@ -2254,9 +2254,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 32ms (ActiveRecord: 5.6ms (0 queries, 0 cached) | GC: 0.4ms)
 
 
-  
+
 ArgumentError (When assigning attributes, you must pass a hash as an argument, Array passed.):
-  
+
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:15:13 -0600
 Processing by UsersController#new as HTML
@@ -2273,9 +2273,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: users):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:15:19 -0600
@@ -2296,9 +2296,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: users):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:16:32 -0600
@@ -2316,9 +2316,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: users):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:17:10 -0600
@@ -2336,9 +2336,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:20:17 -0600
@@ -2356,9 +2356,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ArgumentError (wrong number of arguments (given 4, expected 1)):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:26:54 -0600
@@ -2395,9 +2395,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 16ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:32:48 -0600
@@ -2419,13 +2419,13 @@ Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 
 
 Started GET "/sessions/new" for 127.0.0.1 at 2025-02-14 17:41:54 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/sessions/new"):
-  
+
 Started GET "/session/nwe" for 127.0.0.1 at 2025-02-14 17:42:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/session/nwe"):
-  
+
 Started GET "/session/new" for 127.0.0.1 at 2025-02-14 17:42:24 -0600
 Processing by SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -2469,9 +2469,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 17:47:23 -0600
@@ -2492,7 +2492,7 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create your account</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
@@ -2528,9 +2528,9 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Create your account</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-4:    
+4:
 5:    <%= form_with model: @user url: users_create_path do |form| %>
 6:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
 7:      <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
@@ -2538,7 +2538,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 9:      <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat password", maxlength: 72 %><br>
 10:      <%= form.submit "Create account" %>
 11:    <% end %>
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:13: syntax error, unexpected `end'
 
@@ -2549,7 +2549,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:13: syntax error, unexpected `end'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:02:04 -0600
@@ -2567,9 +2567,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:23:in `user_params'
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:02:19 -0600
@@ -2599,7 +2599,7 @@ Processing by SessionsController#new as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
 <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
 
@@ -2638,7 +2638,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 ):
 1:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
 2:    <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
-3:    
+3:
 4:    @user = User.new
 5:    <%= form_with model: @user url: session_path do |form| %>
 6:      <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
@@ -2646,9 +2646,9 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 8:      <%= form.submit "Sign in" %>
 9:    <% end %>
 10:    <br>
-11:    
+11:
 12:    <%= link_to "Forgot password?", new_password_path %>
-  
+
 app/views/sessions/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/sessions/new.html.erb:15: syntax error, unexpected `end'
 
@@ -2659,7 +2659,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/sessions/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/sessions/new.html.erb:15: syntax error, unexpected `end'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-14 18:47:03 -0600
@@ -2680,7 +2680,7 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create your account</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
@@ -2716,9 +2716,9 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Create your account</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-4:    
+4:
 5:    <%= form_with model: @user url: users_create_path do |form| %>
 6:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
 7:      <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
@@ -2726,7 +2726,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 9:      <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat password", maxlength: 72 %><br>
 10:      <%= form.submit "Create account" %>
 11:    <% end %>
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:13: syntax error, unexpected `end'
 
@@ -2737,7 +2737,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:13: syntax error, unexpected `end'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:47:24 -0600
@@ -2749,7 +2749,7 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create your account</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
@@ -2787,9 +2787,9 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Create your account</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-4:    
+4:
 5:    @user = User.new
 6:    <%= form_with model: @user url: users_create_path do |form| %>
 7:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
@@ -2798,7 +2798,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 10:      <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat password", maxlength: 72 %><br>
 11:      <%= form.submit "Create account" %>
 12:    <% end %>
-  
+
 app/views/users/new.html.erb:6: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:14: syntax error, unexpected `end'
 
@@ -2809,7 +2809,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/users/new.html.erb:6: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/users/new.html.erb:14: syntax error, unexpected `end'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:48:00 -0600
@@ -2821,23 +2821,23 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
 Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
 
 Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: @user = User.new
     6: <%= form_with model: @user, url: users_create_path do |form| %>
     7:   <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     8:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
     9:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:6
 
 Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
-  
+
 app/views/users/new.html.erb:6
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:48:22 -0600
 Processing by UsersController#new as HTML
@@ -2848,23 +2848,23 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
 Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
 
 Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
-    2: 
+    2:
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: <%= form_with model: @user, url: users_create_path do |form| %>
     6:   <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     7:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
     8:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:5
 
 Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
-  
+
 app/views/users/new.html.erb:5
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:50:08 -0600
 Processing by UsersController#new as HTML
@@ -2943,9 +2943,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `save' for nil):
-  
+
 app/controllers/users_controller.rb:10:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 18:59:16 -0600
 Processing by UsersController#new as HTML
@@ -3047,12 +3047,12 @@ Completed 422 Unprocessable Content in 187ms (Views: 8.9ms | ActiveRecord: 3.1ms
 
 
 Started POST "/users/create" for 127.0.0.1 at 2025-02-14 19:01:29 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:15: syntax error, unexpected '=', expecting `end' or dummy end
       flash :alert = "error"
                    ^
 ):
-  
+
 app/controllers/users_controller.rb:15: syntax error, unexpected '=', expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 19:03:13 -0600
 Processing by UsersController#new as HTML
@@ -3123,24 +3123,24 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `errors' for nil)
 Caused by: NoMethodError (undefined method `errors' for nil)
 
 Information for: ActionView::Template::Error (undefined method `errors' for nil):
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: <%= form_with model: @user, url: users_create_path do |form| %>
     6:   <% if @recipe.errors.any? %>
     7:     <ul>
     8:       <% @recipe.errors.full_messages.each do |msg| %>
     9:         <li><%='Error: ' +  msg %></li>
-  
+
 app/views/users/new.html.erb:6
 app/views/users/new.html.erb:5
 
 Information for cause: NoMethodError (undefined method `errors' for nil):
-  
+
 app/views/users/new.html.erb:6
 app/views/users/new.html.erb:5
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 19:30:09 -0600
@@ -3498,14 +3498,14 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 183ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `new_user_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:16:in `create'
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 19:49:52 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 19:51:11 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -3725,6 +3725,195 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 200 OK in 180ms (Views: 1.0ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-02-17 14:24:53 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | GC: 0.0ms)
+Completed 200 OK in 79ms (Views: 17.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-9735cbd0.css" for 127.0.0.1 at 2025-02-17 14:24:53 -0600
+Started GET "/assets/horse1-a797efc9.png" for 127.0.0.1 at 2025-02-17 14:24:53 -0600
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-17 14:24:54 -0600
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-17 14:24:54 -0600
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-17 14:24:54 -0600
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-17 14:24:54 -0600
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-17 14:24:54 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-17 14:24:55 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 14:24:56 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 4.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:24:57 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 26ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:34:36 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 5.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 15.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:35:34 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:35:53 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 4.7ms)
+Completed 200 OK in 40ms (Views: 12.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 14:39:07 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.4ms)
+Completed 200 OK in 35ms (Views: 9.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 14:39:09 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.4ms)
+Completed 200 OK in 46ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:39:11 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:39:20 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 5.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:39:37 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.1ms)
+Completed 200 OK in 27ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:39:57 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:42:30 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:42:52 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.4ms)
+Completed 200 OK in 34ms (Views: 11.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 14:45:26 -0600
+Processing by HorseBiddingController#menu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering horse_bidding/menu.html.erb within layouts/application
+  Rendered horse_bidding/menu.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.2ms)
+Completed 200 OK in 31ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | GC: 0.0ms)
+Completed 200 OK in 77ms (Views: 16.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-9735cbd0.css" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/horse1-a797efc9.png" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-17 16:50:22 -0600
+Started GET "//" for 127.0.0.1 at 2025-02-17 16:50:41 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//" for 127.0.0.1 at 2025-02-17 16:50:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 8.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
 Started POST "/users/create" for 127.0.0.1 at 2025-02-14 19:53:25 -0600
 Processing by UsersController#create as TURBO_STREAM
   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"penispenis", "email_address"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
@@ -3853,13 +4042,13 @@ Processing by UsersController#create as TURBO_STREAM
   ↳ app/controllers/users_controller.rb:11:in `create'
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='Casino',controller='users'*/[0m
   ↳ app/controllers/users_controller.rb:11:in `create'
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 181ms (ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `new_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:15:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 19:56:51 -0600
 Processing by UsersController#new as HTML
@@ -4023,12 +4212,12 @@ Completed 422 Unprocessable Content in 179ms (ActiveRecord: 1.3ms (2 queries, 0 
 
 
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:00:34 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:16: syntax error, unexpected `end'
     end
     ^~~
 ):
-  
+
 app/controllers/users_controller.rb:16: syntax error, unexpected `end'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:00:43 -0600
 Processing by UsersController#new as HTML
@@ -4153,9 +4342,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 255ms (ActiveRecord: 24.4ms (2 queries, 0 cached) | GC: 7.8ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-14 20:02:49 -0600
@@ -4260,9 +4449,9 @@ Completed 422 Unprocessable Content in 161ms (ActiveRecord: 1.1ms (2 queries, 0 
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 20:03:43 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:04:34 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -4295,9 +4484,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 180ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `new_user_path' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:15:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:05:33 -0600
 Processing by UsersController#new as HTML
@@ -4323,9 +4512,9 @@ Redirected to http://127.0.0.1:3000/users/new
 Completed 500 Internal Server Error in 177ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
-  
+
 app/controllers/users_controller.rb:16:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:06:17 -0600
 Processing by UsersController#new as HTML
@@ -4506,7 +4695,7 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 163ms (ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:turbo_stream, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
 
 Searched in:
@@ -4515,7 +4704,7 @@ Searched in:
   * "/home/gobbo/.gem/gems/actiontext-8.0.1/app/views"
   * "/home/gobbo/.gem/gems/actionmailbox-8.0.1/app/views"
 ):
-  
+
 app/controllers/users_controller.rb:15:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:09:49 -0600
 Processing by UsersController#new as HTML
@@ -4549,9 +4738,9 @@ Processing by UsersController#new as HTML
 Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:21:in `user_params'
 app/controllers/users_controller.rb:6:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:11:28 -0600
@@ -4559,9 +4748,9 @@ Processing by UsersController#new as HTML
 Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:25:in `user_params'
 app/controllers/users_controller.rb:6:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:11:59 -0600
@@ -4569,9 +4758,9 @@ Processing by UsersController#new as HTML
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: user):
-  
+
 app/controllers/users_controller.rb:25:in `user_params'
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:13:22 -0600
@@ -4892,13 +5081,13 @@ Processing by UsersController#create as TURBO_STREAM
   ↳ app/controllers/users_controller.rb:15:in `create'
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='Casino',controller='users'*/[0m
   ↳ app/controllers/users_controller.rb:15:in `create'
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 171ms (ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `back_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:19:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:20:50 -0600
 Processing by UsersController#new as HTML
@@ -4934,12 +5123,12 @@ Completed 422 Unprocessable Content in 173ms (ActiveRecord: 1.2ms (2 queries, 0 
 
 
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:21:12 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:16: syntax error, unexpected `end'
     end
     ^~~
 ):
-  
+
 app/controllers/users_controller.rb:16: syntax error, unexpected `end'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:21:20 -0600
 Processing by UsersController#new as HTML
@@ -5426,18 +5615,18 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:40:20 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:40:29 -0600
 Processing by UsersController#new as HTML
@@ -5480,9 +5669,9 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:42:22 -0600
 Processing by UsersController#new as HTML
@@ -5498,9 +5687,9 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:44:43 -0600
 Processing by UsersController#new as HTML
@@ -5516,27 +5705,27 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.6ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:44:59 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:46:26 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `error_text' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:46:40 -0600
 Processing by UsersController#new as HTML
@@ -5705,9 +5894,9 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 20:52:06 -0600
 Processing by UsersController#new as HTML
@@ -5991,7 +6180,7 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create your account</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert]
@@ -6031,11 +6220,11 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Create your account</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert]
-4:    
+4:
 5:    # <%= tag.div(@error_text, style: "color:red") if @error_text %>
-6:    
+6:
 7:    <%= form_with model: @user, url: users_create_path do |form| %>
 8:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
 9:      <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
@@ -6043,7 +6232,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 11:      <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat password", maxlength: 72 %><br>
 12:      <%= form.submit "Create account" %>
 13:    <% end %>
-  
+
 app/views/users/new.html.erb:14: syntax error, unexpected `END'
 app/views/users/new.html.erb:15: unterminated string meets end of file
 
@@ -6054,7 +6243,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
              ^
 ):
-  
+
 app/views/users/new.html.erb:14: syntax error, unexpected `END'
 app/views/users/new.html.erb:15: unterminated string meets end of file
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:01:05 -0600
@@ -6066,7 +6255,7 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.6ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create your account</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert]
@@ -6106,11 +6295,11 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Create your account</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert]
-4:    
+4:
 5:    <%= tag.div(@error_text, style: "color:red") if @error_text %>
-6:    
+6:
 7:    <%= form_with model: @user, url: users_create_path do |form| %>
 8:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
 9:      <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
@@ -6118,7 +6307,7 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 11:      <%= form.password_field :password_confirmation, required: true, autocomplete: "new-password", placeholder: "Repeat password", maxlength: 72 %><br>
 12:      <%= form.submit "Create account" %>
 13:    <% end %>
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected '<'
 app/views/users/new.html.erb:15: syntax error, unexpected `end', expecting ')'
 
@@ -6129,7 +6318,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/users/new.html.erb:5: syntax error, unexpected '<'
 app/views/users/new.html.erb:15: syntax error, unexpected `end', expecting ')'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:01:17 -0600
@@ -6186,23 +6375,23 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
 Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
 
 Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
-    4: 
+    4:
     5: <%= tag.div(@error_text, style: "color:red") if @error_text %>
-    6: 
+    6:
     7: <%= form_with model: @user, url: users_create_path do |form| %>
     8:   <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     9:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
    10:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:7
 
 Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
-  
+
 app/views/users/new.html.erb:7
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:02:42 -0600
 Processing by UsersController#new as HTML
@@ -6213,49 +6402,49 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
 Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
 
 Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
-    4: 
+    4:
     5: <%= tag.div(@error_text, style: "color:red") if @error_text %>
-    6: 
+    6:
     7: <%= form_with model: @user, url: users_create_path do |form| %>
     8:   <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     9:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
    10:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:7
 
 Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
-  
+
 app/views/users/new.html.erb:7
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:04:02 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
   before_action: new_user
                ^
 /home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:39: syntax error, unexpected end-of-input, expecting `end' or dummy end):
-  
+
 app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
 app/controllers/users_controller.rb:39: syntax error, unexpected end-of-input, expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:04:19 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
   before_action: :new_user
                ^
 /home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:39: syntax error, unexpected end-of-input, expecting `end' or dummy end):
-  
+
 app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
 app/controllers/users_controller.rb:39: syntax error, unexpected end-of-input, expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:04:42 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
   before_action: :new_user
                ^
 ):
-  
+
 app/controllers/users_controller.rb:5: syntax error, unexpected ':', expecting `end' or dummy end
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:05:07 -0600
 Processing by UsersController#new as HTML
@@ -6285,9 +6474,9 @@ Completed 422 Unprocessable Content in 193ms (Views: 1.9ms | ActiveRecord: 4.3ms
 
 
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:06:32 -0600
-  
+
 NoMethodError (undefined method `before_new' for class UsersController):
-  
+
 app/controllers/users_controller.rb:5:in `<class:UsersController>'
 app/controllers/users_controller.rb:1:in `<main>'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:06:42 -0600
@@ -6468,9 +6657,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 187ms (ActiveRecord: 6.2ms (3 queries, 0 cached) | GC: 0.5ms)
 
 
-  
+
 ArgumentError (One or more password arguments are required):
-  
+
 app/controllers/users_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-14 21:11:08 -0600
 Processing by SessionsController#new as HTML
@@ -6515,9 +6704,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 337ms (ActiveRecord: 12.0ms (5 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/users_controller.rb:14:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:16:58 -0600
@@ -6543,7 +6732,7 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 164ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:turbo_stream, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
 
 Searched in:
@@ -6552,7 +6741,7 @@ Searched in:
   * "/home/gobbo/.gem/gems/actiontext-8.0.1/app/views"
   * "/home/gobbo/.gem/gems/actionmailbox-8.0.1/app/views"
 ):
-  
+
 app/controllers/users_controller.rb:23:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:17:59 -0600
 Processing by UsersController#new as HTML
@@ -6785,9 +6974,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `new_user_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:3:in `block in <class:UsersController>'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:19:03 -0600
 Processing by UsersController#new as HTML
@@ -6804,14 +6993,14 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `new_user_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:3:in `block in <class:UsersController>'
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 21:19:16 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:19:25 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -6827,9 +7016,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
 
 
-  
+
 NameError (undefined local variable or method `new_user_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:3:in `block in <class:UsersController>'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:19:55 -0600
 Processing by UsersController#new as HTML
@@ -7154,49 +7343,49 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:6:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:26:45 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:6:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:26:56 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:6:in `new'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:27:01 -0600
 Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `locals' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:7:in `new'
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 21:27:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 21:27:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/routes" for 127.0.0.1 at 2025-02-14 21:27:09 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-14 21:27:10 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -7263,13 +7452,13 @@ Completed 200 OK in 18ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 13:11:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-15 13:11:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-15 13:57:38 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -7509,21 +7698,21 @@ Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 [dotenv] Loaded [33m.env[0m
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 14:54:06 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/paths" for 127.0.0.1 at 2025-02-15 14:54:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/paths"):
-  
+
 Started GET "/route" for 127.0.0.1 at 2025-02-15 14:54:18 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/route"):
-  
+
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 14:54:21 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
   [1m[35mSQL (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7425966755193533820', 0) /*application='Casino'*/[0m
@@ -7560,34 +7749,34 @@ ActionController::RoutingError (No route matches [GET] "/routes"):
 [dotenv] Loaded [33m.env[0m
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 16:55:38 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 ArgumentError (Missing :controller key on routes definition, please check your routes.):
-  
+
 config/routes.rb:20:in `block in <main>'
 config/routes.rb:1:in `<main>'
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 16:55:46 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/user/new" for 127.0.0.1 at 2025-02-15 16:57:26 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
   get "user/:username", to "user#show"
                            ^
 ):
-  
+
 config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
 Started GET "/user/new" for 127.0.0.1 at 2025-02-15 16:57:32 -0600
-  
+
 ActionController::RoutingError (uninitialized constant UserController)
 Caused by: ActionDispatch::MissingController (uninitialized constant UserController)
 Caused by: NameError (uninitialized constant UserController)
 
 Information for: ActionController::RoutingError (uninitialized constant UserController):
-  
+
 
 Information for cause: ActionDispatch::MissingController (uninitialized constant UserController):
-  
+
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:91:in `controller_class'
@@ -7644,7 +7833,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: NameError (uninitialized constant UserController):
-  
+
 activesupport (8.0.1) lib/active_support/inflector/methods.rb:290:in `constantize'
 activesupport (8.0.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
@@ -7701,17 +7890,17 @@ puma (6.6.0) lib/puma/server.rb:472:in `process_client'
 puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 Started GET "/user/new" for 127.0.0.1 at 2025-02-15 16:57:53 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
   get "users/:username", to "users#show"
                             ^
 ):
-  
+
 config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
 Started GET "/user/new" for 127.0.0.1 at 2025-02-15 16:57:57 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/user/new"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-15 16:58:10 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -7722,12 +7911,12 @@ Completed 200 OK in 54ms (Views: 12.1ms | ActiveRecord: 4.5ms (0 queries, 0 cach
 
 
 Started GET "/users/user" for 127.0.0.1 at 2025-02-15 16:59:00 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
   get "users/:username", to "users#show"
                             ^
 ):
-  
+
 config/routes.rb:20: syntax error, unexpected string literal, expecting `do' or '{' or '('
 Started GET "/users/user" for 127.0.0.1 at 2025-02-15 16:59:28 -0600
 Processing by UsersController#show as HTML
@@ -7772,20 +7961,20 @@ Processing by SessionsController#new as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `users_new_path' for an instance of #<Class:0x000071d3cfae85c0>)
 Caused by: NameError (undefined local variable or method `users_new_path' for an instance of #<Class:0x000071d3cfae85c0>)
 
 Information for: ActionView::Template::Error (undefined local variable or method `users_new_path' for an instance of #<Class:0x000071d3cfae85c0>):
-    12: 
+    12:
     13: <%= link_to "Forgot password?", new_password_path %>
-    14: 
+    14:
     15: <br/>No account? <%= link_to "Create one here", users_new_path %>.
-  
+
 app/views/sessions/new.html.erb:15
 
 Information for cause: NameError (undefined local variable or method `users_new_path' for an instance of #<Class:0x000071d3cfae85c0>):
-  
+
 app/views/sessions/new.html.erb:15
 Started GET "/session/new" for 127.0.0.1 at 2025-02-15 17:00:48 -0600
 Processing by SessionsController#new as HTML
@@ -7796,25 +7985,25 @@ Processing by SessionsController#new as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `new_users_path' for an instance of #<Class:0x000071d3cfacb420>)
 Caused by: NameError (undefined local variable or method `new_users_path' for an instance of #<Class:0x000071d3cfacb420>)
 
 Information for: ActionView::Template::Error (undefined local variable or method `new_users_path' for an instance of #<Class:0x000071d3cfacb420>):
-    12: 
+    12:
     13: <%= link_to "Forgot password?", new_password_path %>
-    14: 
+    14:
     15: <br/>No account? <%= link_to "Create one here", new_users_path %>.
-  
+
 app/views/sessions/new.html.erb:15
 
 Information for cause: NameError (undefined local variable or method `new_users_path' for an instance of #<Class:0x000071d3cfacb420>):
-  
+
 app/views/sessions/new.html.erb:15
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:00:54 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/session/new" for 127.0.0.1 at 2025-02-15 17:01:20 -0600
 Processing by SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -7842,32 +8031,32 @@ Processing by UsersController#new as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 2.9ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `users_create_path' for an instance of #<Class:0x000071d3cfae0d20>)
 Caused by: NameError (undefined local variable or method `users_create_path' for an instance of #<Class:0x000071d3cfae0d20>)
 
 Information for: ActionView::Template::Error (undefined local variable or method `users_create_path' for an instance of #<Class:0x000071d3cfae0d20>):
-    2: 
+    2:
     3: <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-    4: 
+    4:
     5: <%= form_with model: @user, url: users_create_path do |form| %>
     6:   <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Username", value: params[:username] %><br>
     7:   <%= form.email_field :email_address, required: true, autocomplete: "email", placeholder: "Email", value: params[:email_address] %><br>
     8:   <%= form.password_field :password, required: true, autocomplete: "new-password", placeholder: "Password", maxlength: 72 %><br>
-  
+
 app/views/users/new.html.erb:5
 
 Information for cause: NameError (undefined local variable or method `users_create_path' for an instance of #<Class:0x000071d3cfae0d20>):
-  
+
 app/views/users/new.html.erb:5
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:01:46 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:03:01 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/new" for 127.0.0.1 at 2025-02-15 17:03:39 -0600
 Processing by UsersController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -7887,20 +8076,20 @@ Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:04:06 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/user/new" for 127.0.0.1 at 2025-02-15 17:04:43 -0600
-  
+
 ActionController::RoutingError (uninitialized constant UserController)
 Caused by: ActionDispatch::MissingController (uninitialized constant UserController)
 Caused by: NameError (uninitialized constant UserController)
 
 Information for: ActionController::RoutingError (uninitialized constant UserController):
-  
+
 
 Information for cause: ActionDispatch::MissingController (uninitialized constant UserController):
-  
+
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:91:in `controller_class'
@@ -7957,7 +8146,7 @@ puma (6.6.0) lib/puma/server.rb:254:in `block in run'
 puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 
 Information for cause: NameError (uninitialized constant UserController):
-  
+
 activesupport (8.0.1) lib/active_support/inflector/methods.rb:290:in `constantize'
 activesupport (8.0.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
 actionpack (8.0.1) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
@@ -8147,22 +8336,22 @@ Processing by UsersController#show as TURBO_STREAM
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.3ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `user' for an instance of #<Class:0x0000774ef6fdba58>)
 Caused by: NameError (undefined local variable or method `user' for an instance of #<Class:0x0000774ef6fdba58>)
 
 Information for: ActionView::Template::Error (undefined local variable or method `user' for an instance of #<Class:0x0000774ef6fdba58>):
     1: <h1>Account information</h1>
-    2: 
+    2:
     3: Username: <%= user.username %>
     4: Email address: <%= user.email_address %>
-    5: 
+    5:
     6: Balance: <%= user.balance %>
-  
+
 app/views/users/show.html.erb:3
 
 Information for cause: NameError (undefined local variable or method `user' for an instance of #<Class:0x0000774ef6fdba58>):
-  
+
 app/views/users/show.html.erb:3
 Started GET "/session/new" for 127.0.0.1 at 2025-02-15 17:12:44 -0600
 Processing by SessionsController#new as HTML
@@ -8215,7 +8404,7 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.9ms (2 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Account information</h1>
 
 Username: <%= @user.username %><br/>
@@ -8238,19 +8427,19 @@ Balance: $<%= %.2f" % @user.balance %>
 
 ):
 1:    <h1>Account information</h1>
-2:    
+2:
 3:    Username: <%= @user.username %><br/>
 4:    Email address: <%= @user.email_address %><br/>
-5:    
+5:
 6:    Balance: $<%= %.2f" % @user.balance %>
-  
+
 app/views/users/show.html.erb:6: syntax error, unexpected local variable or method, expecting ')'
 
 Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/comp4350/Casino/app/views/users/show.html.erb:6: syntax error, unexpected local variable or method, expecting ')'
 ....append=( %.2f" % @user.balance );
 ...                        ^~~~~~~
 ):
-  
+
 app/views/users/show.html.erb:6: syntax error, unexpected local variable or method, expecting ')'
 Started GET "/users/penispenis" for 127.0.0.1 at 2025-02-15 17:15:09 -0600
 Processing by UsersController#show as HTML
@@ -8280,20 +8469,20 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `number_with_prescision' for an instance of #<Class:0x0000774ef6ca9560>)
 Caused by: NoMethodError (undefined method `number_with_prescision' for an instance of #<Class:0x0000774ef6ca9560>)
 
 Information for: ActionView::Template::Error (undefined method `number_with_prescision' for an instance of #<Class:0x0000774ef6ca9560>):
     4: Email address: <%= @user.email_address %><br/>
-    5: 
+    5:
     6: Balance: $<%= "%.2f" % @user.balance %><br/>
     7: Balance: $<%= number_with_prescision(@user.balance, prescision: 2, delimiter: ",") %>
-  
+
 app/views/users/show.html.erb:7
 
 Information for cause: NoMethodError (undefined method `number_with_prescision' for an instance of #<Class:0x0000774ef6ca9560>):
-  
+
 app/views/users/show.html.erb:7
 Started GET "/users/penispenis" for 127.0.0.1 at 2025-02-15 17:17:33 -0600
 Processing by UsersController#show as HTML
@@ -8378,9 +8567,9 @@ Completed 200 OK in 14ms (Views: 2.0ms | ActiveRecord: 0.5ms (2 queries, 0 cache
 [dotenv] Loaded [33m.env[0m
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:23:52 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/users_controller.rb:37: syntax error, unexpected end-of-input, expecting `end' or dummy end):
-  
+
 app/controllers/users_controller.rb:37: syntax error, unexpected end-of-input, expecting `end' or dummy end
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:23:59 -0600
 Processing by UsersController#show as HTML
@@ -8392,9 +8581,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 57ms (ActiveRecord: 6.4ms (2 queries, 0 cached) | GC: 1.4ms)
 
 
-  
+
 NoMethodError (undefined method `respond' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:30:in `show'
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:26:26 -0600
 Processing by UsersController#show as HTML
@@ -8410,27 +8599,27 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 46ms (ActiveRecord: 3.6ms (2 queries, 0 cached) | GC: 0.4ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `username' for nil)
 Caused by: NoMethodError (undefined method `username' for nil)
 
 Information for: ActionView::Template::Error (undefined method `username' for nil):
     1: <h1>Account information</h1>
-    2: 
+    2:
     3: Username: <%= @user.username %><br/>
     4: Email address: <%= @user.email_address %><br/>
-    5: 
+    5:
     6: Balance: $<%= number_with_precision(@user.balance, precision: 2, delimiter: ",") %>
-  
+
 app/views/users/show.html.erb:3
 
 Information for cause: NoMethodError (undefined method `username' for nil):
-  
+
 app/views/users/show.html.erb:3
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-15 17:26:26 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:26:52 -0600
 Processing by UsersController#show as HTML
   Parameters: {"id"=>"penis1"}
@@ -8441,9 +8630,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 43ms (ActiveRecord: 4.2ms (2 queries, 0 cached) | GC: 0.6ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:30:in `show'
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:27:01 -0600
 Processing by UsersController#show as HTML
@@ -8455,14 +8644,14 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 31ms (ActiveRecord: 3.7ms (2 queries, 0 cached) | GC: 2.8ms)
 
 
-  
+
 NameError (undefined local variable or method `users_create_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:30:in `show'
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:27:11 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-15 17:27:26 -0600
 Processing by UsersController#show as HTML
   Parameters: {"id"=>"penis1"}
@@ -8540,16 +8729,16 @@ Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/routes" for 127.0.0.1 at 2025-02-15 17:41:48 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/routes"):
-  
+
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 Started GET "/users/" for 127.0.0.1 at 2025-02-15 17:45:21 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
-  
+
 actionpack (8.0.1) lib/abstract_controller/base.rb:158:in `process'
 actionview (8.0.1) lib/action_view/rendering.rb:40:in `process'
 actionpack (8.0.1) lib/action_controller/metal.rb:252:in `dispatch'
@@ -8609,9 +8798,9 @@ puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
 [dotenv] Loaded [33m.env[0m
 Started GET "/routers" for 127.0.0.1 at 2025-02-15 17:45:43 -0600
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/routers"):
-  
+
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
@@ -8817,9 +9006,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 385ms (ActiveRecord: 13.0ms (5 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/users_controller.rb:15:in `create'
 Started GET "/users/penis1" for 127.0.0.1 at 2025-02-16 15:50:32 -0600
@@ -8906,7 +9095,7 @@ Processing by SessionsController#new as HTML
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Sign in</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
@@ -8947,33 +9136,33 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Sign in</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
 4:    <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
-5:    
+5:
 6:    <%= form_with url: session_path do |form| %>
 7:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:username], value; params[:email_address] %><br>
 8:      <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72 %><br>
 9:      <%= form.submit "Sign in" %>
 10:    <% end %>
 11:    <br>
-12:    
+12:
 13:    <%= link_to "Forgot password?", new_password_path %>
-14:    
+14:
 15:    <br/>No account? <%= link_to "Create one here", new_user_path %>.
-  
+
 app/views/sessions/new.html.erb:7: syntax error, unexpected ';', expecting =>
 
 Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/comp4350/Casino/app/views/sessions/new.html.erb:7: syntax error, unexpected ';', expecting =>
 ...alue: params[:username], value; params[:email_address] ); @o...
 ...                              ^
 ):
-  
+
 app/views/sessions/new.html.erb:7: syntax error, unexpected ';', expecting =>
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-16 15:55:08 -0600
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 15:55:27 -0600
 Processing by SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
@@ -8990,9 +9179,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ArgumentError (One or more finder arguments are required):
-  
+
 app/controllers/sessions_controller.rb:10:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 15:55:58 -0600
 Processing by SessionsController#new as HTML
@@ -9010,9 +9199,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 0.4ms)
 
 
-  
+
 ArgumentError (One or more finder arguments are required):
-  
+
 app/controllers/sessions_controller.rb:10:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 15:57:54 -0600
 Processing by SessionsController#new as HTML
@@ -9094,9 +9283,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 207ms (ActiveRecord: 11.2ms (2 queries, 0 cached) | GC: 0.6ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:10:20 -0600
@@ -9123,15 +9312,15 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 207ms (ActiveRecord: 11.5ms (2 queries, 0 cached) | GC: 0.5ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:15:21 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/sessions_controller.rb:29: syntax error, unexpected `end'):
-  
+
 app/controllers/sessions_controller.rb:29: syntax error, unexpected `end'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:15:39 -0600
 Processing by SessionsController#new as HTML
@@ -9148,9 +9337,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 TypeError (wrong element type String at 0 (expected array)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:19:17 -0600
 Processing by SessionsController#new as HTML
@@ -9167,9 +9356,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 TypeError (wrong element type String at 0 (expected array)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:21:08 -0600
 Processing by SessionsController#new as HTML
@@ -9186,9 +9375,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 TypeError (wrong element type String at 0 (expected array)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:31:18 -0600
 Processing by SessionsController#new as HTML
@@ -9205,9 +9394,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
 
 
-  
+
 ArgumentError (wrong number of arguments (given 2, expected 1)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:31:32 -0600
 Processing by SessionsController#new as HTML
@@ -9224,9 +9413,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 TypeError (wrong element type String at 0 (expected array)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:34:21 -0600
 Processing by SessionsController#new as HTML
@@ -9243,9 +9432,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
 
 
-  
+
 TypeError (wrong element type Hash at 0 (expected array)):
-  
+
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:34:48 -0600
 Processing by SessionsController#new as HTML
@@ -9270,18 +9459,18 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 213ms (ActiveRecord: 9.9ms (2 queries, 0 cached) | GC: 4.5ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:38:22 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/sessions_controller.rb:26: syntax error, unexpected ',', expecting =>
       params.expect({:username, :password})
                               ^
 ):
-  
+
 app/controllers/sessions_controller.rb:26: syntax error, unexpected ',', expecting =>
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:38:46 -0600
 Processing by SessionsController#new as HTML
@@ -9306,9 +9495,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 211ms (ActiveRecord: 12.0ms (2 queries, 0 cached) | GC: 4.2ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:39:24 -0600
@@ -9334,9 +9523,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 195ms (ActiveRecord: 9.2ms (2 queries, 0 cached) | GC: 1.5ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:14:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:40:05 -0600
@@ -9362,9 +9551,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 201ms (ActiveRecord: 11.5ms (2 queries, 0 cached) | GC: 0.9ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:15:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:40:51 -0600
@@ -9390,9 +9579,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 199ms (ActiveRecord: 7.4ms (2 queries, 0 cached) | GC: 1.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:15:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-16 16:41:42 -0600
@@ -9429,9 +9618,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 379ms (ActiveRecord: 16.4ms (5 queries, 0 cached) | GC: 0.4ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/users_controller.rb:16:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:43:18 -0600
@@ -9449,9 +9638,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:28:in `session_params'
 app/controllers/sessions_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:43:21 -0600
@@ -9469,9 +9658,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:28:in `session_params'
 app/controllers/sessions_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:48:57 -0600
@@ -9489,9 +9678,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:29:in `session_params'
 app/controllers/sessions_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:49:22 -0600
@@ -9509,9 +9698,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:29:in `session_params'
 app/controllers/sessions_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:50:53 -0600
@@ -9537,9 +9726,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 207ms (ActiveRecord: 11.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:16:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:52:58 -0600
@@ -9565,9 +9754,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 184ms (ActiveRecord: 8.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:12:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:53:03 -0600
@@ -9589,9 +9778,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 344ms (ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `sessions' for nil):
-  
+
 app/controllers/concerns/authentication.rb:42:in `start_new_session_for'
 app/controllers/sessions_controller.rb:11:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:54:17 -0600
@@ -9619,18 +9808,18 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 369ms (ActiveRecord: 9.0ms (3 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:18:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:58:15 -0600
-  
+
 SyntaxError (/home/gobbo/Stuff/Uni/comp4350/Casino/app/controllers/sessions_controller.rb:32: syntax error, unexpected ':', expecting ')'
       params.expect([]:username , :password])
                       ^
 ):
-  
+
 app/controllers/sessions_controller.rb:32: syntax error, unexpected ':', expecting ')'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:58:21 -0600
 Processing by SessionsController#new as HTML
@@ -9655,9 +9844,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 205ms (ActiveRecord: 11.4ms (2 queries, 0 cached) | GC: 0.3ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:19:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 16:58:47 -0600
@@ -9683,9 +9872,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 209ms (ActiveRecord: 10.6ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:20:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:02:48 -0600
@@ -9697,7 +9886,7 @@ Processing by SessionsController#new as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Sign in</h1>
 
 <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
@@ -9743,10 +9932,10 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 
 ):
 1:    <h1>Sign in</h1>
-2:    
+2:
 3:    <%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
 4:    <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
-5:    
+5:
 6:    <%= form_with model: @session url: session_path do |form| %>
 7:      <%# <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %>
 8:      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your username or email address", value: params[:username] %><br>
@@ -9754,11 +9943,11 @@ Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error w
 10:      <%= form.submit "Sign in" %>
 11:    <% end %>
 12:    <br>
-13:    
+13:
 14:    <%= link_to "Forgot password?", new_password_path %>
-15:    
+15:
 16:    <br/>No account? <%= link_to "Create one here", new_user_path %>.
-  
+
 app/views/sessions/new.html.erb:6: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/sessions/new.html.erb:19: syntax error, unexpected `end'
 
@@ -9769,7 +9958,7 @@ Information for cause: ActiveSupport::SyntaxErrorProxy (/home/gobbo/Stuff/Uni/co
           end
           ^~~
 ):
-  
+
 app/views/sessions/new.html.erb:6: syntax error, unexpected local variable or method, expecting `end' or dummy end
 app/views/sessions/new.html.erb:19: syntax error, unexpected `end'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:03:51 -0600
@@ -9787,9 +9976,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:03:54 -0600
 Processing by SessionsController#new as HTML
@@ -9815,9 +10004,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty or invalid: username):
-  
+
 app/controllers/sessions_controller.rb:13:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:05:07 -0600
 Processing by SessionsController#new as HTML
@@ -9843,9 +10032,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ArgumentError (One or more password arguments are required):
-  
+
 app/controllers/sessions_controller.rb:14:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:08:43 -0600
 Processing by SessionsController#new as HTML
@@ -9862,9 +10051,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ArgumentError (One or more password arguments are required):
-  
+
 app/controllers/sessions_controller.rb:15:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:09:29 -0600
 Processing by SessionsController#new as HTML
@@ -9881,9 +10070,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ArgumentError (One or more password arguments are required):
-  
+
 app/controllers/sessions_controller.rb:15:in `create'
 Started GET "/session/new" for 127.0.0.1 at 2025-02-16 17:10:49 -0600
 Processing by SessionsController#new as HTML
@@ -9908,9 +10097,9 @@ Processing by SessionsController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 197ms (ActiveRecord: 5.9ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of SessionsController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/sessions_controller.rb:22:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-16 17:13:05 -0600
@@ -9940,15 +10129,15 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 194ms (ActiveRecord: 5.4ms (4 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'users.password_confirmation' in 'where clause')
 Caused by: Mysql2::Error (Unknown column 'users.password_confirmation' in 'where clause')
 
 Information for: ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'users.password_confirmation' in 'where clause'):
-  
+
 
 Information for cause: Mysql2::Error (Unknown column 'users.password_confirmation' in 'where clause'):
-  
+
 app/controllers/users_controller.rb:13:in `create'
 Started GET "/users/new" for 127.0.0.1 at 2025-02-16 17:14:11 -0600
 Processing by UsersController#new as HTML
@@ -10001,9 +10190,9 @@ Processing by UsersController#create as TURBO_STREAM
 Completed 500 Internal Server Error in 373ms (ActiveRecord: 17.3ms (5 queries, 0 cached) | GC: 0.5ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/concerns/authentication.rb:38:in `after_authentication_url'
 app/controllers/users_controller.rb:15:in `create'
 Started GET "/users/penis4" for 127.0.0.1 at 2025-02-16 17:15:53 -0600
@@ -10016,9 +10205,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 26ms (ActiveRecord: 3.4ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:30:in `show'
 Started GET "/users/penis4" for 127.0.0.1 at 2025-02-16 17:16:14 -0600
 Processing by UsersController#show as HTML
@@ -10030,9 +10219,9 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `root_url' for an instance of UsersController):
-  
+
 app/controllers/users_controller.rb:31:in `show'
 Started GET "/users/penis4" for 127.0.0.1 at 2025-02-16 17:16:52 -0600
 Processing by UsersController#show as HTML
@@ -10044,12 +10233,117 @@ Processing by UsersController#show as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 3.2ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
-  
+
 TypeError (no implicit conversion of Symbol into Integer):
-  
+
 app/controllers/users_controller.rb:28:in `[]'
 app/controllers/users_controller.rb:28:in `show'
 Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-16 17:16:52 -0600
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 16:56:39 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "//" for 127.0.0.1 at 2025-02-17 16:56:43 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 16:56:44 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_bidding/menu" for 127.0.0.1 at 2025-02-17 16:56:45 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/horse_bidding/menu"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 16:56:45 -0600
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/horse_race" for 127.0.0.1 at 2025-02-17 16:56:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/horse_race"):
+  
+Started GET "/horse_race/index" for 127.0.0.1 at 2025-02-17 16:56:52 -0600
+Processing by HorseRaceController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 16:56:52 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | GC: 6.9ms)
+Completed 200 OK in 94ms (Views: 20.0ms | ActiveRecord: 26.0ms (0 queries, 0 cached) | GC: 6.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2025-02-17 16:56:56 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 71ms (Views: 5.0ms | ActiveRecord: 8.8ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 16:56:57 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-02-17 16:57:10 -0600
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"username" => "Ozone", "email_address" => "[FILTERED]", "password" => "[FILTERED]", "password_confirmation" => "[FILTERED]"}, "commit" => "Create account"}
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Exists? (8.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email_address` = 'ozone@gmail.com' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'Ozone' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO `users` (`email_address`, `password_digest`, `created_at`, `updated_at`, `balance`, `username`) VALUES ('ozone@gmail.com', '$2a$12$jibHPqfjXjpjlQjYHUaMcOT3I/EyUtBJ/lA4QsnKG3SlKMlJXOGUm', '2025-02-17 22:57:11.131310', '2025-02-17 22:57:11.131310', 0.0, 'Ozone') /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email_address` = 'ozone@gmail.com' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:13:in 'UsersController#create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.1ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15', '2025-02-17 22:57:11.395384', '2025-02-17 22:57:11.395384') /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/horse_race/index
+Completed 302 Found in 548ms (ActiveRecord: 25.2ms (5 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/horse_race/index" for 127.0.0.1 at 2025-02-17 16:57:11 -0600
+Processing by HorseRaceController#index as TURBO_STREAM
+  [1m[36mSession Load (2.3ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='index',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering horse_race/index.html.erb within layouts/application
+  Rendered horse_race/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 3.5ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+

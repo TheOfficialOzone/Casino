@@ -1,0 +1,2 @@
+module HorseBiddingHelper
+end
