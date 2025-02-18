@@ -1,7 +1,8 @@
   <%= form_with(url: submit_bet_path, method: :post, local: true) do |form| %>
-    <%= form.hidden_field :type,  value: type %>
+    <%= form.hidden_field :kind,  value: kind %>
+    <% form.label horse.id %>
     <%= form.hidden_field :horse, value: horse.id %>
     <%= number_field_tag :amount, nil, step: 0.01, in: 0..Current.session.user.balance %>
-    <%= form.label "#{'%5.2f' % (type == :straight ? horse.straight_odds : horse.place_odds)}x" %>
-    <%= submit_tag "#{type.to_s.capitalize} Bet" %>
+    <%= form.label "#{'%5.2f' % (kind == :straight ? horse.straight_odds : horse.place_odds)}x" %>
+    <%= submit_tag "#{kind.to_s.capitalize} Bet" %>
   <% end %>

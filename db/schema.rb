@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_12_055215) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_18_052540) do
+  create_table "horses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.float "speed"
+    t.string "image"
+    t.string "timing"
+    t.float "place_odds"
+    t.float "straight_odds"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "ip_address"
@@ -30,5 +41,18 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_12_055215) do
     t.index ["email_address"], name: "index_users_on_email_address", unique: true
   end
 
+  create_table "wagers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.float "amount"
+    t.string "kind"
+    t.bigint "user_id", null: false
+    t.bigint "horse_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["horse_id"], name: "index_wagers_on_horse_id"
+    t.index ["user_id"], name: "index_wagers_on_user_id"
+  end
+
   add_foreign_key "sessions", "users"
+  add_foreign_key "wagers", "horses"
+  add_foreign_key "wagers", "users"
 end

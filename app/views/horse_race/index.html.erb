@@ -300,25 +300,12 @@ input::-webkit-inner-spin-button {
       setInterval(updateTimer, 10);
   });
 </script>
-
-
-<!--
-<h1>Horse Racing</h1>
-
-<div id="timer">00:000</div>
-
-<div>
-<% @horses.shuffle.each do |horse| %>
-    <%= image_tag 'horse1.png',
-	width: 200,
-	id: 'animated-image',
-	style: "animation-duration: #{horse.speed}s; animation-timing-function: #{horse.timing};" %>
-<% end %>
-</div>
 -->
 
-<%= "Balance: #{Current.session.user.balance}" %>
 
-<% @horses.shuffle.each do |horse| %>
+
+<%= "#{Current.session.user.id}'s Balance: #{Current.session.user.balance}" %>
+
+<% Horse.all.each do |horse| %>
     <%= render 'shared/horse_bet_container', horse: horse %>
 <% end %>
