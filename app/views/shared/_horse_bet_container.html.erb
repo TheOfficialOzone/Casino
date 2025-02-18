@@ -1,0 +1,6 @@
+<div>
+  <%= horse.name %>
+  <%= image_tag horse.image %>
+  <%= render "shared/horse_bet_form", horse: horse, type: :straight %>
+  <%= render "shared/horse_bet_form", horse: horse, type: :place %>
+</div>
