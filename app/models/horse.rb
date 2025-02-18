@@ -10,13 +10,14 @@ class Horse < ApplicationRecord
 
   def self.random
     name          = @@names.sample()       # Random name for horse
-    image         = @@images.sample()      # Random image of the horse
-    speed         = rand(@speeds) + rand   # Random speed, this tells us if horse is gonna win the race
-    timing        = @@timings.sample()     # Random timing so horses move in interesting ways
-    place_odds    = rand(@@odds) + rand    # Random odds for payout if horse gets 1st, 2nd or 3rd
-    straight_odds = place_odds * 2 +  rand # Random odds for payout if horse gets 1st, this has to be bigger than place_odds
+    image         = @@images.sample()     # Random image of the horse
+    speed         = rand(@speeds) + rand  # Random speed, this tells us if horse is gonna win the race
+    timing        = @@timings.sample()    # Random timing so horses move in interesting ways
+    show_odds     = rand(@@odds) + rand   # Random odds for payout if horse gets 1st, 2nd or 3rd
+    place_odds    = show_odds * 2 + rand  # Random odds for payout if horse gets 1st or 2nd this has to be bigger than show_odds
+    straight_odds = place_odds * 2 + rand # Random odds for payout if horse gets 1st, this has to be bigger than place_odds
     
-    return Horse.new(name: name, image: image, speed: speed, timing: timing, place_odds: place_odds, straight_odds: straight_odds)
+    return Horse.new(name: name, image: image, speed: speed, timing: timing, show_odds: show_odds, place_odds: place_odds, straight_odds: straight_odds)
   end
 
   def odds(kind)
@@ -31,8 +32,8 @@ class Horse < ApplicationRecord
       return self.straight_odds
     when :place
       return self.place_odds
-    else
-      return nil
+    when :show
+      return self.show_odds
     end
   end
 

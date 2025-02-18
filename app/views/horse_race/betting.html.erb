@@ -10,18 +10,22 @@
 
       return every - (seconds * 1000);
   }
-  
-  // Redirect to race on the minute
-  setTimeout(function() {
-      window.location.href = "<%= url_for(controller: 'horse_race', action: 'race')%>"; 
-  }, timeLeft());
 
   function updateRaceStartTimer() {
       raceStartTimer = document.getElementById('raceStartTimer');
       raceStartTimer.textContent = (timeLeft() / 1000) + "s before the race starts";
   }
 
+  updateRaceStartTimer();
+  
+  // Redirect to race on the minute
+  <% unless @debug %> // When debugging it's annoying to wait, so if debug is true we'll ignore this and include a button to start instead
+  setTimeout(function() {
+      window.location.href = "<%= url_for(controller: 'horse_race', action: 'race')%>"; 
+  }, timeLeft());
+
   var interval = setInterval(updateRaceStartTimer, 1000);
+  <% end %>
 </script>
 
 <%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %>
@@ -33,6 +37,8 @@
     <%= render 'shared/horse_bet_container', horse: horse %>
 <% end %>
 
-<%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
-    <%= submit_tag "Start Race (Debug)" %>
+<% if @debug %> 
+    <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
+        <%= submit_tag "Start Race (Debug)" %>
+    <% end %>
 <% end %>

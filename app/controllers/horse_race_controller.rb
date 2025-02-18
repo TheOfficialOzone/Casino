@@ -1,6 +1,7 @@
 class HorseRaceController < ApplicationController
 
   def initialize
+    @debug = true
   end
   
   def index
@@ -8,6 +9,12 @@ class HorseRaceController < ApplicationController
 
   def betting
   end
+
+  def race
+    @race_time_after_finish = 3000 # Wait 3s after the race is done
+    @race_time = (Horse.maximum(:speed) * 1000) + @race_time_after_finish
+  end
+
 
   # Race is over, pay the money to winning wagers
   def resolve_race
@@ -32,7 +39,7 @@ class HorseRaceController < ApplicationController
     Current.session.user.balance -= amount
     Current.session.user.save
 
-    redirect_to horse_race_index_path
+    redirect_to horse_race_betting_path
   end
 
   def debug_skip_to_race

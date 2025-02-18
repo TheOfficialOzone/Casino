@@ -1,10 +1,36 @@
 <script>
   setTimeout(function() {
       window.location.href = "<%= url_for(controller: 'horse_race', action: 'betting') %>";
-  }, 10000);
+  }, <%= @race_time %>);
+
+  <% Horse.all.each do |horse| %>
+      setTimeout(function() {
+          var rankings = document.getElementById("rankings").getElementsByTagName("tbody")[0];
+
+          var newRow = rankings.insertRow();
+
+          var newHorse = newRow.insertCell(0);
+          newHorse.textContent = "<%= horse.name %>";
+
+          var newTime  = newRow.insertCell(1);
+          newTime.textContent = <%= horse.speed %>;
+          
+      }, <%= horse.speed * 1000 %>);
+  <% end %>
 </script>
 
 
 <% Horse.all.each do |horse| %>
     <%= render 'shared/horse_race', horse: horse %>
 <% end %>
+
+<table id="rankings">
+  <thead>
+    <tr>
+      <td>Horse</td>
+      <td>Time</td>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>

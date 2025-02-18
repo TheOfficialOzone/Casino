@@ -1,6 +1,14 @@
-<div>
-  <%= horse.name %>
-  <%= image_tag horse.image %>
+<style>
+  .horse-bet-container {
+      border: 1px solid #000;
+  }
+</style>
+
+
+<div class="horse-bet-container">
+  <h1><%= horse.name %><h1>
+  <%= image_tag horse.image, width: 200, height: 200 %>
   <%= render "shared/horse_bet_form", horse: horse, kind: :straight %>
   <%= render "shared/horse_bet_form", horse: horse, kind: :place %>
+  <%= render "shared/horse_bet_form", horse: horse, kind: :show %>
 </div>
