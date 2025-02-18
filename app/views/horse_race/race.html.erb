@@ -1,3 +1,10 @@
+<script>
+  setTimeout(function() {
+      window.location.href = "<%= url_for(controller: 'horse_race', action: 'betting') %>";
+  }, 10000);
+</script>
+
+
 <% Horse.all.each do |horse| %>
     <%= render 'shared/horse_race', horse: horse %>
 <% end %>

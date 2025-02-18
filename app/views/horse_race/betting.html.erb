@@ -1,3 +1,29 @@
+
+<div id="raceStartTimer"></div>
+
+<script>
+
+  function timeLeft() {
+      const now     = new Date();
+      const seconds = now.getSeconds();
+      const every   = 60000;
+
+      return every - (seconds * 1000);
+  }
+  
+  // Redirect to race on the minute
+  setTimeout(function() {
+      window.location.href = "<%= url_for(controller: 'horse_race', action: 'race')%>"; 
+  }, timeLeft());
+
+  function updateRaceStartTimer() {
+      raceStartTimer = document.getElementById('raceStartTimer');
+      raceStartTimer.textContent = (timeLeft() / 1000) + "s before the race starts";
+  }
+
+  var interval = setInterval(updateRaceStartTimer, 1000);
+</script>
+
 <%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %>
 <% #= render 'shared/horse_winners_bar' %>
 <%= render 'shared/wager' %>
@@ -7,6 +33,6 @@
     <%= render 'shared/horse_bet_container', horse: horse %>
 <% end %>
 
-  <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
-    <%= submit_tag "Start Race" %>
-  <% end %>
+<%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
+    <%= submit_tag "Start Race (Debug)" %>
+<% end %>

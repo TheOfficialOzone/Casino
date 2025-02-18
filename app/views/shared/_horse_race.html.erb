@@ -1,9 +1,9 @@
 <style>
-  #box {
+  #horse {
       width: 100px;
       height: 100px;
       position: absolute;
-      /* animation: moveImage 10s linear forwards; */
+      animation-delay: 3s; /* 3..2..1..GO! */
   }
 
   @keyframes moveImage {
@@ -12,4 +12,4 @@
   }
 </style>
 
-<%= image_tag horse.image, id: "box", style: "animation: #{horse.animation}"%>
+<%= image_tag horse.image, id: "horse", style: "animation: #{horse.animation}"%>
