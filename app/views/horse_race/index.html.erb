@@ -303,9 +303,15 @@ input::-webkit-inner-spin-button {
 -->
 
 
+<%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %>
+<% #= render 'shared/horse_winners_bar' %>
+<%= render 'shared/wager' %>
 
-<%= "#{Current.session.user.id}'s Balance: #{Current.session.user.balance}" %>
 
 <% Horse.all.each do |horse| %>
     <%= render 'shared/horse_bet_container', horse: horse %>
+<% end %>
+
+<% Horse.all.each do |horse| %>
+    <%= render 'shared/horse_race', horse: horse %>
 <% end %>

@@ -18,4 +18,25 @@ class Horse < ApplicationRecord
     
     return Horse.new(name: name, image: image, speed: speed, timing: timing, place_odds: place_odds, straight_odds: straight_odds)
   end
+
+  def odds(kind)
+
+    # When working with ruby I sometimes use symbols, but we store them as string on the database, this lets me use either or
+    if kind.is_a?(String)
+      kind = kind.to_sym
+    end
+    
+    case kind
+    when :straight
+      return self.straight_odds
+    when :place
+      return self.place_odds
+    else
+      return nil
+    end
+  end
+
+  def animation
+    return "moveImage #{self.speed}s #{self.timing} forwards;"
+  end
 end

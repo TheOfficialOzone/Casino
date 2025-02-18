@@ -1,0 +1,12 @@
+<%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %>
+<% #= render 'shared/horse_winners_bar' %>
+<%= render 'shared/wager' %>
+
+
+<% Horse.all.each do |horse| %>
+    <%= render 'shared/horse_bet_container', horse: horse %>
+<% end %>
+
+  <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
+    <%= submit_tag "Start Race" %>
+  <% end %>

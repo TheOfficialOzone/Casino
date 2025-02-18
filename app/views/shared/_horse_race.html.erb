@@ -1,0 +1,15 @@
+<style>
+  #box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      /* animation: moveImage 10s linear forwards; */
+  }
+
+  @keyframes moveImage {
+      0%   {left:   0%;}
+      100% {left: 90%;}
+  }
+</style>
+
+<%= image_tag horse.image, id: "box", style: "animation: #{horse.animation}"%>

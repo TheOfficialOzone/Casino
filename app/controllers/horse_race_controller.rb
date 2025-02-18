@@ -6,6 +6,20 @@ class HorseRaceController < ApplicationController
   def index
   end
 
+  def betting
+  end
+
+  # Race is over, pay the money to winning wagers
+  def resolve_race
+    winners = Horse.order(:speed).limit(3) # Get 1st, 2nd & 3rd place horses
+
+    winners.each.with_index(1) do |winner, place|
+      Wager.select {|wager| wager.horse_id == winner.id and wager.hits? place }.each do |wager|
+        wager.fufill
+      end
+    end
+  end
+
   def submit_bet
     user   = Current.session.user
     horse  = Horse.find(params[:horse])
@@ -19,5 +33,9 @@ class HorseRaceController < ApplicationController
     Current.session.user.save
 
     redirect_to horse_race_index_path
+  end
+
+  def debug_skip_to_race
+    redirect_to horse_race_race_path
   end
 end

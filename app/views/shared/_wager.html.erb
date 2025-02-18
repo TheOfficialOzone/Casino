@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Horse</th>
+    <th>Kind</th>
+    <th>Amount</th>
+    <th>Odds</th>
+    <th>Payout</th>
+  </tr>
+<% Wager.where(user_id: Current.session.user.id).each do |wager| %>
+  <tr>
+    <% horse  = Horse.find(wager.horse_id)
+       name   = horse.name 
+       kind   = wager.kind.capitalize
+       amount = wager.amount
+       odds   = horse.odds(wager.kind)
+       payout = wager.payout %>
+    <th><%= name %></th>
+    <th><%= kind %></th>
+    <th>$<%= amount %></th>
+    <th><%= odds %>x</th>
+    <th>$<%= payout %></th>
+  </tr>
+<% end %>
+</table>
