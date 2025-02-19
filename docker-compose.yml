@@ -1,6 +1,6 @@
 services:
   db:
-    image: mysql:latest
+    image: mysql:lts
     volumes:
       - ${DB_DIR}:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
