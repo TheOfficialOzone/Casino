@@ -1,7 +1,7 @@
 class HorseRaceController < ApplicationController
 
   def initialize
-    @debug = true
+    @debug = false
   end
 
   def index
@@ -18,13 +18,17 @@ class HorseRaceController < ApplicationController
 
   # Race is over, pay the money to winning wagers
   def resolve_race
+    user = Current.session.user
     winners = Horse.order(:speed).limit(3) # Get 1st, 2nd & 3rd place horses
 
+    # Payout winning wagers
     winners.each.with_index(1) do |winner, place|
-      Wager.select {|wager| wager.horse_id == winner.id and wager.hits? place }.each do |wager|
+      Wager.where(horse_id: winner.id, user_id: user.id).select {|wager| wager.hits? place }.each do |wager|
         wager.fufill
       end
     end
+
+    Wager.where(user_id: user.id).destroy_all # Remove all wagers fufilled or otherwise
 
     redirect_to horse_race_betting_path
   end
