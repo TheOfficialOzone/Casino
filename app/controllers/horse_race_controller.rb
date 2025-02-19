@@ -30,6 +30,9 @@ class HorseRaceController < ApplicationController
 
     Wager.where(user_id: user.id).destroy_all # Remove all wagers fufilled or otherwise
 
+    # Remove random horses every now and again to keep things fresh
+    Horse.remove_random_horses
+
     redirect_to horse_race_betting_path
   end
 

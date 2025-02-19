@@ -24,7 +24,12 @@
 	  },
 	  body: ""
       }).then(response => {
-	  window.location.href = response.url;
+	  if(response.ok) {
+	      window.location.href = response.url;
+	  }
+	  else {
+	      console.error('Failed to post: ', response.statusText);
+	  }
       });
   }, <%= @race_time %>);
   <% end %>
