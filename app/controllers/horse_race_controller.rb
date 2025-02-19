@@ -3,7 +3,7 @@ class HorseRaceController < ApplicationController
   def initialize
     @debug = true
   end
-  
+
   def index
   end
 

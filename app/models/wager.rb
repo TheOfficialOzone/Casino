@@ -10,6 +10,17 @@ class Wager < ApplicationRecord
     return odds * self.amount
   end
 
+  def self.tooltip(kind)
+    case kind.to_sym
+    when :straight
+        return "if the horse comes in 1st place, the bet is a winner"
+    when :place
+        return "if the horse comes in 1st or 2nd place, the bet is a winner"
+    when :show
+        return "if the horse comes in 1st, 2nd or 3rd place, the bet is a winner"
+    end
+  end
+
   # Based on the horse's place did the wager hit?
   def hits?(place)
     case self.kind.to_sym
