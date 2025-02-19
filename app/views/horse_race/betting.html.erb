@@ -1,6 +1,8 @@
 
 <div id="raceStartTimer"></div>
 
+<%= stylesheet_link_tag 'horse_betting.css', media: 'all' %>
+
 <script>
 
   function timeLeft() {
@@ -17,11 +19,11 @@
   }
 
   updateRaceStartTimer();
-  
+
   // Redirect to race on the minute
   <% unless @debug %> // When debugging it's annoying to wait, so if debug is true we'll ignore this and include a button to start instead
   setTimeout(function() {
-      window.location.href = "<%= url_for(controller: 'horse_race', action: 'race')%>"; 
+      window.location.href = "<%= url_for(controller: 'horse_race', action: 'race')%>";
   }, timeLeft());
 
   var interval = setInterval(updateRaceStartTimer, 1000);
@@ -33,11 +35,13 @@
 <%= render 'shared/wager' %>
 
 
+<div id="main_betting_menu" class="container">
 <% Horse.all.each do |horse| %>
     <%= render 'shared/horse_bet_container', horse: horse %>
 <% end %>
+</div>
 
-<% if @debug %> 
+<% if @debug %>
     <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
         <%= submit_tag "Start Race (Debug)" %>
     <% end %>

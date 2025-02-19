@@ -1,8 +1,0 @@
-  <%= form_with(url: submit_bet_path, method: :post, local: true) do |form| %>
-    <%= form.hidden_field :kind,  value: kind %>
-    <% form.label horse.id %>
-    <%= form.hidden_field :horse, value: horse.id %>
-    <%= number_field_tag :amount, nil, step: 0.01, in: 0..Current.session.user.balance %>
-    <%= form.label "#{'%5.2f' % horse.odds(kind)}x" %>
-    <%= submit_tag "#{kind.to_s.capitalize} Bet" %>
-  <% end %>
