@@ -1,3 +1,12 @@
+<style>
+  .background {
+      background-image: url('<%= asset_path "track.png" %>');
+      background-repeat: repeat;
+      height: 200px;
+  }
+</style>
+
+
 <script>
   <% unless @debug %>
   setTimeout(function() {
@@ -30,9 +39,17 @@
 </script>
 
 
+<div class="background">
 <% Horse.all.each do |horse| %>
     <%= render 'shared/horse_race', horse: horse %>
 <% end %>
+
+
+<% if @debug %>
+    <%= button_to 'Return To Betting', {controller: 'horse_race', action: 'resolve_race'}, method: :post %>
+<% end %>
+
+</div>
 
 <table id="rankings">
   <thead>
@@ -45,7 +62,3 @@
   <tbody>
   </tbody>
 </table>
-
-<% if @debug %>
-    <%= button_to 'Return To Betting', {controller: 'horse_race', action: 'resolve_race'}, method: :post %>
-<% end %>
