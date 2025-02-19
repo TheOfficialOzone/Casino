@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   post 'horse_race/debug_skip_to_race', to: 'horse_race#debug_skip_to_race', as: 'debug_skip_to_race'
   post 'horse_race/submit_bet', to: 'horse_race#submit_bet', as: 'submit_bet'
+  post 'horse_race/resolve_race', to: 'horse_race#resolve_race', as: 'resolve_race'
 
   #post 'horse_race/submit_bet', to: 'hores_race#submit_bet'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
