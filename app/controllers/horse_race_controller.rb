@@ -25,6 +25,8 @@ class HorseRaceController < ApplicationController
         wager.fufill
       end
     end
+
+    redirect_to horse_race_betting_path
   end
 
   def submit_bet

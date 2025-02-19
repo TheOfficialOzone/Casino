@@ -1,9 +1,11 @@
 <script>
+  <% unless @debug %>
   setTimeout(function() {
-      window.location.href = "<%= url_for(controller: 'horse_race', action: 'betting') %>";
+      window.location.href = "<%= url_for(controller: 'horse_race', action: 'resolve_race') %>";
   }, <%= @race_time %>);
+  <% end %>
 
-  <% Horse.all.each do |horse| %>
+  <% Horse.order(:speed).each.with_index(1) do |horse, place| %>
       setTimeout(function() {
           var rankings = document.getElementById("rankings").getElementsByTagName("tbody")[0];
 
@@ -13,8 +15,16 @@
           newHorse.textContent = "<%= horse.name %>";
 
           var newTime  = newRow.insertCell(1);
-          newTime.textContent = <%= horse.speed %>;
-          
+          newTime.textContent = "<%= format('%.2f', horse.speed) %>s";
+
+          <% profit = Wager.select {|wager| wager.horse_id == horse.id}.map {|wager| (wager.hits? place) ? wager.payout : -wager.amount}.sum %>
+
+	  var newProfit = newRow.insertCell(2);
+	  <% if profit != 0 %>
+	      newProfit.style.color = "<%= profit > 0 ? 'green' : 'red' %>";
+	      newProfit.textContent = "$<%= format('%.2f', profit) %>";
+	  <% end %>
+
       }, <%= horse.speed * 1000 %>);
   <% end %>
 </script>
@@ -29,8 +39,13 @@
     <tr>
       <td>Horse</td>
       <td>Time</td>
+      <td>Payout</td>
     </tr>
   </thead>
   <tbody>
   </tbody>
 </table>
+
+<% if @debug %>
+    <%= button_to 'Return To Betting', {controller: 'horse_race', action: 'resolve_race'}, method: :post %>
+<% end %>
