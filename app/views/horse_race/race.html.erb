@@ -1,3 +1,7 @@
+<head>
+  <%= csrf_meta_tags %>
+</head>
+
 <style>
   .background {
       background-image: url('<%= asset_path "track.png" %>');
@@ -9,8 +13,24 @@
 
 <script>
   <% unless @debug %>
+  // Redirect back to bet page after the race is done
   setTimeout(function() {
-      window.location.href = "<%= url_for(controller: 'horse_race', action: 'resolve_race') %>";
+      const csrfToken = document.querySelector('meta[name="csrf-token"]');
+      fetch("<%= url_for(controller: 'horse_race', action: 'resolve_race') %>", {
+	  method: 'POST',
+	  headers: {
+	      'Content-Type': 'application/x-www-form-urlencoded',
+	      'X-CSRF-Token': csrfToken.getAttribute('content')
+	  },
+	  body: ""
+      }).then(response => {
+	  if(response.ok) {
+	      window.location.href = response.url;
+	  }
+	  else {
+	      console.error('Failed to post: ', response.statusText);
+	  }
+      });
   }, <%= @race_time %>);
   <% end %>
 

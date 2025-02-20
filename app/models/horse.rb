@@ -9,7 +9,7 @@ class Horse < ApplicationRecord
   @@odds    = 1..100
 
   def self.random
-    name          = @@names.sample()       # Random name for horse
+    name          = @@names.sample()      # Random name for horse
     image         = @@images.sample()     # Random image of the horse
     speed         = rand(@speeds) + rand  # Random speed, this tells us if horse is gonna win the race
     timing        = @@timings.sample()    # Random timing so horses move in interesting ways
@@ -18,6 +18,27 @@ class Horse < ApplicationRecord
     straight_odds = place_odds * 2 + rand # Random odds for payout if horse gets 1st, this has to be bigger than place_odds
     
     return Horse.new(name: name, image: image, speed: speed, timing: timing, show_odds: show_odds, place_odds: place_odds, straight_odds: straight_odds)
+  end
+
+  # Remove Horse at random
+  def self.remove_random_horses(n=1)
+    horses_total     = 6
+
+    n.times do |_|
+        # The horse most likely to be removed is the slowest, Horse least likely to be remove is the fastest
+        odds = (1..horses_total).map {|i| 2.0 * i / (horses_total * (horses_total + 1))}
+
+        weight_sum = 0
+        cumulative_weights = odds.map {|x| weight_sum += x}
+
+        remove             = rand
+        remove_index       = cumulative_weights.index {|weight| remove < weight }
+
+        unlucky_horse = Horse.order(:speed)[remove_index] # Bye Bye
+        puts "#{unlucky_horse.name} has passed..."
+        unlucky_horse.destroy # Remove unlucky horse 
+        Horse.random.save # Add a new horse as replacement
+    end
   end
 
   def odds(kind)
