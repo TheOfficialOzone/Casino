@@ -64,9 +64,6 @@
     height:230px;
 
     background-color: #BBBBBB;
-    /* margin: 0;
-    padding: 0; */
-    /* margin: 0 auto; */
     margin: 5px;
 
     outline-width: 2px;
@@ -118,7 +115,6 @@
 .place_button:hover .tooltiptext,
 .straight_button:hover .tooltiptext {
     visibility: visible;
-    /* opacity: 1; */
     animation-name: tooltip-opacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -157,7 +153,6 @@ input::-webkit-inner-spin-button {
     background-color: #00FF00;
     width: 100px;
     height: 100px;
-    /* float: bottom; */
 }
 
 /* Tool Tips on the bet buttons */

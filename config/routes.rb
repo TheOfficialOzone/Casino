@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  #get "horse_race/index"
-
   get "horse_race/race"
   get "horse_race/betting"
 
