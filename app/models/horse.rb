@@ -36,7 +36,7 @@ class Horse < ApplicationRecord
 
         unlucky_horse = Horse.order(:speed)[remove_index] # Bye Bye
         puts "#{unlucky_horse.name} has passed..."
-        unlucky_horse.destroy # Remove unlucky horse 
+        unlucky_horse.destroy # Remove unlucky horse
         Horse.random.save # Add a new horse as replacement
     end
   end
@@ -59,7 +59,6 @@ class Horse < ApplicationRecord
   end
 
   def animation
-    # return "moveImage #{self.speed}s #{self.timing} forwards;"
-    return "moveImage 10s #{self.timing} forwards, jostleImage ease-in-out 0.1s infinite alternate;"
+    return "moveImage #{self.speed}s #{self.timing} forwards, jostleImage ease-in-out 0.1s infinite alternate;"
   end
 end
