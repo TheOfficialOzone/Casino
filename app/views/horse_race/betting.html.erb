@@ -1,10 +1,50 @@
 
-<div id="raceStartTimer"></div>
 
 <%= stylesheet_link_tag 'horse_betting.css', media: 'all' %>
 
-<script>
+<style>
+.race_start {
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
 
+.balance {
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.wager {
+    padding: 10px;
+}
+</style>
+
+
+<div class="race_start", id="raceStartTimer"></div>
+
+<div class="balance"><%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %></div>
+
+
+<div id="main_betting_menu" class="container">
+<% Horse.all.each do |horse| %>
+    <%= render 'shared/horse_bet_container', horse: horse %>
+<% end %>
+</div>
+
+<div class="wager">
+<%= render 'shared/wager' %>
+</div>
+
+<% if @debug %>
+    <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
+        <%= submit_tag "Start Race (Debug)" %>
+    <% end %>
+<% end %>
+
+<script>
   function timeLeft() {
       const now     = new Date();
       const seconds = now.getSeconds();
@@ -29,20 +69,3 @@
   var interval = setInterval(updateRaceStartTimer, 1000);
   <% end %>
 </script>
-
-<%= "#{Current.session.user.username.capitalize}'s Balance: $#{Current.session.user.balance}" %>
-<% #= render 'shared/horse_winners_bar' %>
-<%= render 'shared/wager' %>
-
-
-<div id="main_betting_menu" class="container">
-<% Horse.all.each do |horse| %>
-    <%= render 'shared/horse_bet_container', horse: horse %>
-<% end %>
-</div>
-
-<% if @debug %>
-    <%= form_with(url: debug_skip_to_race_path, method: :post, local: true) do |form| %>
-        <%= submit_tag "Start Race (Debug)" %>
-    <% end %>
-<% end %>

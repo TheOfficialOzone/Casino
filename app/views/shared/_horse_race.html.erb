@@ -3,7 +3,7 @@
       width: 100px;
       height: 100px;
       position: absolute;
-      margin-top: 100px;
+      margin-top: 40px;
       animation-delay: 3s; /* 3..2..1..GO! */
   }
 
@@ -11,6 +11,11 @@
       0%   {left:   0%;}
       100% {left: 90%;}
   }
+
+  @keyframes jostleImage {
+      0%    { transform: rotate(15deg); }
+      100%    { transform: rotate(-5deg); }
+  }
 </style>
 
-<%= image_tag horse.image, id: "horse", style: "animation: #{horse.animation}"%>
+<%= image_tag horse.image, id: "horse", style: "top: #{track_index * 15}px; animation: #{horse.animation}"%>

@@ -3,7 +3,7 @@ class Horse < ApplicationRecord
   has_many :wagers, dependent: :destroy
 
   @@names   = (1..100).map { |x| "MyHorse#{x}" }
-  @@images  = ['horse1.png'] 
+  @@images  = ['horse1.png']
   @@speeds  = 5..10
   @@timings = ["linear", "ease", "ease-in", "ease-out", "ease-in-out"]
   @@odds    = 1..100
@@ -16,7 +16,7 @@ class Horse < ApplicationRecord
     show_odds     = rand(@@odds) + rand   # Random odds for payout if horse gets 1st, 2nd or 3rd
     place_odds    = show_odds * 2 + rand  # Random odds for payout if horse gets 1st or 2nd this has to be bigger than show_odds
     straight_odds = place_odds * 2 + rand # Random odds for payout if horse gets 1st, this has to be bigger than place_odds
-    
+
     return Horse.new(name: name, image: image, speed: speed, timing: timing, show_odds: show_odds, place_odds: place_odds, straight_odds: straight_odds)
   end
 
@@ -26,7 +26,7 @@ class Horse < ApplicationRecord
     if kind.is_a?(String)
       kind = kind.to_sym
     end
-    
+
     case kind
     when :straight
       return self.straight_odds
@@ -38,6 +38,7 @@ class Horse < ApplicationRecord
   end
 
   def animation
-    return "moveImage #{self.speed}s #{self.timing} forwards;"
+    # return "moveImage #{self.speed}s #{self.timing} forwards;"
+    return "moveImage 10s #{self.timing} forwards, jostleImage ease-in-out 0.1s infinite alternate;"
   end
 end
