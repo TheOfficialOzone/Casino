@@ -1,3 +1,4 @@
+# This class handles the logic for the lobby page
 class LobbyController < ApplicationController
   allow_unauthenticated_access
 

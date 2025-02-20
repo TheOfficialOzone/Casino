@@ -29,7 +29,7 @@ class LobbyControllerTest < ActionDispatch::IntegrationTest
   test "should get lobby index" do
     get lobby_path
     assert_response :success
-  end 
+  end
 
   # Test for pressing the log out button to return to new session page
   test "should log out and delete session" do
