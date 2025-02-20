@@ -36503,3 +36503,1815 @@ Processing by HorseRaceController#betting as HTML
   Rendered horse_race/betting.html.erb (Duration: 18.3ms | GC: 0.0ms)
 Completed 200 OK in 48ms (Views: 15.0ms | ActiveRecord: 4.4ms (16 queries, 10 cached) | GC: 0.0ms)
 >>>>>>> 41-horse-racing
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-19 18:01:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-19 18:01:30 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:01:31 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (3.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:49
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:53
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 9.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 13.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 14.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.7ms | GC: 2.5ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.7ms | GC: 2.5ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 5.8ms | GC: 3.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 5.3ms | GC: 3.8ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 12.4ms | GC: 11.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 8.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 28.8ms | GC: 15.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 28.9ms | GC: 15.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.4ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 7.1ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 7.7ms | GC: 0.6ms)
+  [1m[36mWager Load (0.6ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.1ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 53.3ms | GC: 0.5ms)
+  Rendered horse_race/betting.html.erb (Duration: 166.8ms | GC: 20.1ms)
+Completed 200 OK in 238ms (Views: 156.1ms | ActiveRecord: 26.3ms (30 queries, 23 cached) | GC: 20.1ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:28:21 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (22.7ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:50
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:54
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 5.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 4.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 10.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 11.1ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 15.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.8ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 19.6ms | GC: 0.7ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 19.7ms | GC: 0.7ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.5ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.6ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  [1m[36mWager Load (1.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (1.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 18.5ms | GC: 0.1ms)
+  Rendered horse_race/betting.html.erb (Duration: 109.4ms | GC: 15.9ms)
+Completed 200 OK in 180ms (Views: 103.7ms | ActiveRecord: 31.0ms (30 queries, 23 cached) | GC: 16.2ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:28:35 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (1.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:53
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:57
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 11.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 12.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 13.1ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 8.6ms | GC: 8.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 9.2ms | GC: 8.2ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 9.2ms | GC: 8.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.3ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.3ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.1ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.2ms)
+  [1m[36mWager Load (0.8ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 20.7ms | GC: 0.7ms)
+  Rendered horse_race/betting.html.erb (Duration: 73.7ms | GC: 10.5ms)
+Completed 200 OK in 119ms (Views: 60.8ms | ActiveRecord: 21.2ms (30 queries, 23 cached) | GC: 10.5ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:31:30 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:53
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:57
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 7.1ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 8.3ms | GC: 7.7ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 16.9ms | GC: 8.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 17.4ms | GC: 8.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.0ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 2.0ms | GC: 0.9ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 2.0ms | GC: 0.9ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.3ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.5ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.4ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.4ms | GC: 0.6ms)
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 13.8ms | GC: 0.0ms)
+  Rendered horse_race/betting.html.erb (Duration: 61.5ms | GC: 10.7ms)
+Completed 200 OK in 104ms (Views: 52.2ms | ActiveRecord: 15.3ms (30 queries, 23 cached) | GC: 10.7ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:31:57 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:53
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:57
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 12.0ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 14.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 14.3ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.9ms | GC: 0.7ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.9ms | GC: 0.8ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.9ms | GC: 0.8ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 18.0ms | GC: 2.6ms)
+  Rendered horse_race/betting.html.erb (Duration: 58.5ms | GC: 4.7ms)
+Completed 200 OK in 99ms (Views: 48.9ms | ActiveRecord: 14.9ms (30 queries, 23 cached) | GC: 7.6ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:32:12 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.7ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 11.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.7ms | GC: 1.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.3ms | GC: 2.8ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 21.0ms | GC: 4.9ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 21.2ms | GC: 4.9ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.0ms | GC: 1.7ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.6ms | GC: 2.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.8ms | GC: 2.5ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 8.0ms | GC: 6.8ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 8.2ms | GC: 7.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 4.0ms | GC: 3.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.3ms | GC: 2.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.4ms | GC: 2.1ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 9.1ms | GC: 7.8ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 9.1ms | GC: 7.8ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.5ms | GC: 1.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.4ms | GC: 1.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.8ms | GC: 2.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.8ms | GC: 2.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.4ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.4ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  [1m[36mWager Load (0.6ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 21.8ms | GC: 0.3ms)
+  Rendered horse_race/betting.html.erb (Duration: 91.1ms | GC: 23.8ms)
+Completed 200 OK in 128ms (Views: 81.5ms | ActiveRecord: 14.3ms (30 queries, 23 cached) | GC: 23.9ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:32:29 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 10.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 12.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 12.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 16.8ms | GC: 0.0ms)
+  Rendered horse_race/betting.html.erb (Duration: 58.2ms | GC: 0.0ms)
+Completed 200 OK in 98ms (Views: 47.8ms | ActiveRecord: 15.1ms (30 queries, 23 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:33:31 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 8.0ms | GC: 3.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 10.1ms | GC: 3.9ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 10.3ms | GC: 3.9ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.7ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.7ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.4ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.4ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.4ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.4ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.1ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  [1m[36mWager Load (0.6ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 18.3ms | GC: 0.2ms)
+  Rendered horse_race/betting.html.erb (Duration: 69.2ms | GC: 6.4ms)
+Completed 200 OK in 111ms (Views: 58.6ms | ActiveRecord: 15.3ms (30 queries, 23 cached) | GC: 6.4ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:33:39 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.7ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.9ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 4.4ms | GC: 4.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 5.0ms | GC: 4.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 5.1ms | GC: 4.0ms)
+  [1m[36mWager Load (0.6ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 17.4ms | GC: 0.5ms)
+  Rendered horse_race/betting.html.erb (Duration: 54.8ms | GC: 5.0ms)
+Completed 200 OK in 92ms (Views: 44.3ms | ActiveRecord: 15.7ms (30 queries, 23 cached) | GC: 5.1ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:33:49 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 7.3ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 9.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 9.2ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.0ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.9ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.9ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 0.8ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 0.8ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 18.2ms | GC: 0.0ms)
+  Rendered horse_race/betting.html.erb (Duration: 52.9ms | GC: 1.5ms)
+Completed 200 OK in 94ms (Views: 42.4ms | ActiveRecord: 15.6ms (30 queries, 23 cached) | GC: 1.7ms)
+
+
+Started POST "/horse_race/debug_skip_to_race" for 127.0.0.1 at 2025-02-19 18:42:16 -0800
+Processing by HorseRaceController#debug_skip_to_race as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Start Race (Debug)"}
+  [1m[36mSession Load (20.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='debug_skip_to_race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Redirected to http://127.0.0.1:3000/horse_race/race
+Completed 302 Found in 68ms (ActiveRecord: 20.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:42:16 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.7ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:31
+  [1m[36mWager Load (0.7ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (1.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (1.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:58:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 24.8ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 20.7ms | ActiveRecord: 6.3ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/track-ae92a286.png" for 127.0.0.1 at 2025-02-19 18:42:16 -0800
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:42:42 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.5ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:31
+  [1m[36mWager Load (0.4ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:58:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 7.8ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 5.8ms | ActiveRecord: 4.9ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:43:44 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.4ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:31
+  [1m[36mWager Load (0.7ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:43
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:58:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 19.9ms | GC: 9.7ms)
+Completed 200 OK in 51ms (Views: 18.3ms | ActiveRecord: 4.4ms (12 queries, 5 cached) | GC: 9.7ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:44:13 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.4ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.4ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.3ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 1.0ms | GC: 0.3ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 25.0ms | GC: 0.8ms)
+Completed 200 OK in 72ms (Views: 20.9ms | ActiveRecord: 12.2ms (12 queries, 5 cached) | GC: 1.4ms)
+
+
+Started POST "/horse_race/debug_skip_to_race" for 127.0.0.1 at 2025-02-19 18:53:55 -0800
+Processing by HorseRaceController#debug_skip_to_race as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Start Race (Debug)"}
+  [1m[36mSession Load (11.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='debug_skip_to_race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Redirected to http://127.0.0.1:3000/horse_race/race
+Completed 302 Found in 44ms (ActiveRecord: 12.4ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:53:55 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.1ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (1.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 10.5ms | GC: 0.6ms)
+Completed 200 OK in 35ms (Views: 6.8ms | ActiveRecord: 5.5ms (12 queries, 5 cached) | GC: 0.6ms)
+
+
+Started POST "/horse_race/debug_skip_to_race" for 127.0.0.1 at 2025-02-19 18:54:17 -0800
+Processing by HorseRaceController#debug_skip_to_race as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Start Race (Debug)"}
+  [1m[36mSession Load (1.3ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='debug_skip_to_race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Redirected to http://127.0.0.1:3000/horse_race/race
+Completed 302 Found in 36ms (ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:54:17 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.1ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 9.0ms | GC: 1.0ms)
+Completed 200 OK in 36ms (Views: 6.8ms | ActiveRecord: 4.6ms (12 queries, 5 cached) | GC: 1.0ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-19 18:55:11 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 5.9ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 7.9ms | GC: 1.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 8.4ms | GC: 1.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.5ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.5ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.3ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.3ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.1ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 1.2ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 1.3ms | GC: 0.4ms)
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 15.4ms | GC: 0.2ms)
+  Rendered horse_race/betting.html.erb (Duration: 60.5ms | GC: 9.7ms)
+Completed 200 OK in 103ms (Views: 52.3ms | ActiveRecord: 17.1ms (30 queries, 23 cached) | GC: 9.7ms)
+
+
+Started POST "/horse_race/debug_skip_to_race" for 127.0.0.1 at 2025-02-19 18:55:14 -0800
+Processing by HorseRaceController#debug_skip_to_race as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Start Race (Debug)"}
+  [1m[36mSession Load (1.3ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='debug_skip_to_race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Redirected to http://127.0.0.1:3000/horse_race/race
+Completed 302 Found in 35ms (ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:55:14 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.1ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 9.4ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 7.2ms | ActiveRecord: 4.3ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:55:40 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 19.4ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 15.1ms | ActiveRecord: 11.7ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:55:47 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 19.4ms | GC: 0.6ms)
+Completed 200 OK in 60ms (Views: 15.8ms | ActiveRecord: 12.0ms (12 queries, 5 cached) | GC: 1.3ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:55:56 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.4ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 19.7ms | GC: 0.3ms)
+Completed 200 OK in 61ms (Views: 16.1ms | ActiveRecord: 11.3ms (12 queries, 5 cached) | GC: 0.7ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:55:59 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.4ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 3.7ms | ActiveRecord: 4.4ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:56:00 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.4ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (1.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 4.5ms | ActiveRecord: 5.5ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-19 18:56:01 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.3ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.4ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.4ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 7.6ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 17.3ms | ActiveRecord: 4.8ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-20 14:03:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 56ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-20 14:03:17 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/owenzonneveld/.local/share/mise/installs/ruby/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-20 14:03:18 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (3.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.6ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.1ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.8ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.1ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 57.0ms | GC: 0.0ms)
+Completed 200 OK in 144ms (Views: 50.7ms | ActiveRecord: 24.6ms (12 queries, 5 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/betting" for 127.0.0.1 at 2025-02-20 14:04:11 -0800
+Processing by HorseRaceController#betting as HTML
+  [1m[36mSession Load (1.4ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering horse_race/betting.html.erb
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:28
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/betting.html.erb:32
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 9.3ms | GC: 3.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.7ms | GC: 0.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 14.4ms | GC: 4.9ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 14.9ms | GC: 4.9ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.4ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 3.3ms | GC: 0.7ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.1ms | GC: 0.7ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 3.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.7ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 5.1ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 5.1ms | GC: 0.6ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 2.4ms | GC: 1.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 4.2ms | GC: 1.3ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 4.3ms | GC: 1.3ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 8.1ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 14.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 14.5ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 9.0ms | GC: 8.5ms)
+  Rendered shared/_horse_bet_form_bet_line.html.erb (Duration: 0.8ms | GC: 0.2ms)
+  Rendered shared/_horse_bet_form_stylized.html.erb (Duration: 10.4ms | GC: 8.7ms)
+  Rendered shared/_horse_bet_container.html.erb (Duration: 10.5ms | GC: 8.7ms)
+  [1m[36mWager Load (0.6ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` WHERE `wagers`.`user_id` = 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:27
+  [1m[36mHorse Load (0.9ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.3ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mHorse Load (1.3ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='betting',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/shared/_wager.html.erb:29
+  [1m[36mCACHE Horse Load (0.0ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  Rendered shared/_wager.html.erb (Duration: 29.5ms | GC: 0.3ms)
+  Rendered horse_race/betting.html.erb (Duration: 152.3ms | GC: 32.4ms)
+Completed 200 OK in 204ms (Views: 139.9ms | ActiveRecord: 18.2ms (30 queries, 23 cached) | GC: 32.4ms)
+
+
+Started GET "/assets/horse_betting-be2d42c0.css" for 127.0.0.1 at 2025-02-20 14:04:11 -0800
+Started POST "/horse_race/debug_skip_to_race" for 127.0.0.1 at 2025-02-20 14:04:38 -0800
+Processing by HorseRaceController#debug_skip_to_race as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "commit" => "Start Race (Debug)"}
+  [1m[36mSession Load (1.3ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='debug_skip_to_race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Redirected to http://127.0.0.1:3000/horse_race/race
+Completed 302 Found in 38ms (ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/horse_race/race" for 127.0.0.1 at 2025-02-20 14:04:39 -0800
+Processing by HorseRaceController#race as HTML
+  [1m[36mSession Load (1.2ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mHorse Maximum (0.5ms)[0m  [1m[34mSELECT MAX(`horses`.`speed`) FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/controllers/horse_race_controller.rb:15:in 'HorseRaceController#race'
+  Rendering horse_race/race.html.erb
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` ORDER BY `horses`.`speed` ASC /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:33
+  [1m[36mWager Load (0.5ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.7ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 5 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.6ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` WHERE `horses`.`id` = 6 LIMIT 1 /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/models/wager.rb:9:in 'Wager#payout'
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mCACHE Wager Load (0.0ms)[0m  [1m[34mSELECT `wagers`.* FROM `wagers`[0m
+  ↳ app/views/horse_race/race.html.erb:45
+  [1m[36mHorse Load (0.5ms)[0m  [1m[34mSELECT `horses`.* FROM `horses` /*action='race',application='Casino',controller='horse_race'*/[0m
+  ↳ app/views/horse_race/race.html.erb:60:in 'Enumerable#each_with_index'
+  Rendered shared/_horse_race.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_horse_race.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered horse_race/race.html.erb (Duration: 15.2ms | GC: 0.1ms)
+Completed 200 OK in 45ms (Views: 12.7ms | ActiveRecord: 4.6ms (12 queries, 5 cached) | GC: 0.2ms)
+
+

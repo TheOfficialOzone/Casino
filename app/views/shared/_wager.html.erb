@@ -1,6 +1,6 @@
 <style>
   .wager-table {
-      height: 200px;
+      height: 400px;
       overflow-y: auto;
   }
 
@@ -27,7 +27,7 @@
 <% Wager.where(user_id: Current.session.user.id).each do |wager| %>
   <tr>
     <% horse  = Horse.find(wager.horse_id)
-       name   = horse.name 
+       name   = horse.name
        kind   = wager.kind.capitalize
        amount = format("%.2f", wager.amount)
        odds   = format("%.2f", horse.odds(wager.kind))

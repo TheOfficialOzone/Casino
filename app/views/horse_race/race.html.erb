@@ -4,9 +4,25 @@
 
 <style>
   .background {
-      background-image: url('<%= asset_path "track.png" %>');
-      background-repeat: repeat;
       height: 200px;
+  }
+
+  .race_image {
+      position: absolute;
+      background-image: url('<%= asset_path "track.png" %>');
+      animation-name: parallaxImage;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+      left: 0px;
+      width: 200%;
+      height: 200px;
+  }
+
+  @keyframes parallaxImage {
+      100% {transform: translateX(-400px);}
   }
 </style>
 
@@ -60,8 +76,9 @@
 
 
 <div class="background">
-<% Horse.all.each do |horse| %>
-    <%= render 'shared/horse_race', horse: horse %>
+    <div class="race_image"></div>
+<% Horse.all.each_with_index do |horse, index| %>
+    <%= render 'shared/horse_race', horse: horse, track_index: index %>
 <% end %>
 
 
