@@ -1,5 +1,6 @@
+# This class handles the logic for user account creation, and viewing user information
 class UsersController < ApplicationController
-  allow_unauthenticated_access only: %i[ new create ]
+  allow_unauthenticated_access only: %i[new create]
   rate_limit to: 10, within: 3.minutes, only: :create, with: -> { redirect_to users_new_path, alert: "Try again later." }
 
   def new
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # Start new session after creating account
-      if user = User.authenticate_by(auth_params)
+      if (user = User.authenticate_by(auth_params))
         start_new_session_for user
         redirect_to after_authentication_url
       else
@@ -32,11 +33,12 @@ class UsersController < ApplicationController
   end
 
   private
-    def user_params
-      params.expect( user: [ :email_address, :username, :password, :password_confirmation ] )
-    end
 
-    def auth_params
-      params.expect( user: [ :email_address, :password ] )
-    end
+  def user_params
+    params.expect(user: [:email_address, :username, :password, :password_confirmation])
+  end
+
+  def auth_params
+    params.expect(user: [:email_address, :password])
+  end
 end

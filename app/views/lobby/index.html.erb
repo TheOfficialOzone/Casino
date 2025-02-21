@@ -1,0 +1,31 @@
+<head>
+<%= stylesheet_link_tag "lobby" %>
+</head>
+<body>
+    <header class = "lobby-header">
+        <h1>Casino</h1>
+    </header>
+    <div id="carpet-div">
+    </div>
+    <main id="main-text" class="lobby-main">
+        <p>
+            Welcome to Casino! <br>
+            We are currently under construction but feel free to enjoy some horse races while we finish up the rest.
+        </p>
+        
+    </main>
+    <div class="lobby-account-info">
+        <%= button_to "Logout", session_path, method: :delete %>
+    </div>
+
+    <div class="lobby-game" id="horse-racing">
+        <%= button_to "Horse Racing", horse_racing_lobby_path, method: :post, remote: true %>
+    </div>
+    <div class="lobby-game" id="roulette">
+        <button class="coming-soon">Roulette</button>
+    </div>
+    <div class="lobby-game" id="slots">
+        <button class="coming-soon">Slots</button>
+    </div>
+
+<body>
