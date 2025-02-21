@@ -1,3 +1,4 @@
+# This class handles the logic for session management, and sign in/out for existing users
 class SessionsController < ApplicationController
   allow_unauthenticated_access only: %i[new create]
   rate_limit to: 10, within: 3.minutes, only: :create, with: -> { redirect_to new_session_url, alert: "Try again later." }
@@ -11,8 +12,7 @@ class SessionsController < ApplicationController
     params[:session][:email_address] = params[:session][:username]
 
     # Try authenticating with username, then email address
-    user = User.authenticate_by(session_params_username)
-    user ||= User.authenticate_by(session_params_email)
+    user = User.authenticate_by(session_params_username) || User.authenticate_by(session_params_email)
 
     if user
       start_new_session_for user

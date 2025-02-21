@@ -1,3 +1,4 @@
+# This class handles the logic for password resets, and mailing reset tokens
 class PasswordsController < ApplicationController
   allow_unauthenticated_access
   before_action :set_user_by_token, only: %i[edit update]
@@ -5,7 +6,7 @@ class PasswordsController < ApplicationController
   def new; end
 
   def create
-    if user = User.find_by(email_address: params[:email_address])
+    if (user = User.find_by(email_address: params[:email_address]))
       PasswordsMailer.reset(user).deliver_later
     end
 

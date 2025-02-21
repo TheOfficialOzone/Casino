@@ -1,3 +1,4 @@
+# This module provides helper functions for session management
 module Authentication
   extend ActiveSupport::Concern
 
