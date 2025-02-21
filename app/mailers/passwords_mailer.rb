@@ -1,3 +1,4 @@
+# This class provides functions for password reset emails
 class PasswordsMailer < ApplicationMailer
   def reset(user)
     @user = user

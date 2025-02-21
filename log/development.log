@@ -804,6 +804,7 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 18ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+<<<<<<< HEAD
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
   [1m[35m (8.2ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
@@ -10053,6 +10054,7 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-16 17:16:52 -0600
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+<<<<<<< HEAD
 [dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
 [dotenv] Loaded [33m.env[0m
 Started GET "/" for 127.0.0.1 at 2025-02-17 14:50:10 -0600
@@ -10437,3 +10439,2128 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+=======
+>>>>>>> e68e7e7 ([#33] Add background image & CSS styling.)
+=======
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 72ms (Views: 14.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:04 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:39:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | GC: 0.0ms)
+Completed 200 OK in 77ms (Views: 16.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 11:59:55 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'lobby.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'lobby.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'lobby.css' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: </head>
+    4: 
+    5: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:2
+
+Information for cause: Propshaft::MissingAssetError (The asset 'lobby.css' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:2
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-07 11:59:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:00:12 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 11.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-e8dc057d.css" for 127.0.0.1 at 2025-02-07 12:00:12 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:00:13 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:35 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.1ms)
+
+
+Started GET "/assets/lobby-7bba3967.css" for 127.0.0.1 at 2025-02-07 12:19:35 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:36 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:19:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | GC: 0.0ms)
+Completed 200 OK in 72ms (Views: 15.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:21:00 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 10.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-89f44e78.css" for 127.0.0.1 at 2025-02-07 12:21:00 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 7.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | GC: 0.0ms)
+Completed 200 OK in 65ms (Views: 23.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/lobby-d28c4f21.css" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Unable to resolve 'Carpet.jpg' for missing asset 'Carpet.jpg' in lobby.css
+Started GET "/assets/Carpet.jpg" for 127.0.0.1 at 2025-02-07 12:28:41 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:28:42 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:05 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 8.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000012d414758>::Carpet)
+Caused by: NameError (uninitialized constant #<Class:0x000000012d414758>::Carpet)
+
+Information for: ActionView::Template::Error (uninitialized constant #<Class:0x000000012d414758>::Carpet):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%image_tag Carpet.jpg%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: NameError (uninitialized constant #<Class:0x000000012d414758>::Carpet):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:26 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 1.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+  
+ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%image_tag "Carpet.jpg"%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:32:34 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'Carpet.jpg' was not found in the load path.):
+    1: <head>
+    2: <%= stylesheet_link_tag "lobby" %>
+    3: <%= image_tag "Carpet.jpg"%>
+    4: </head>
+    5: <body>
+    6: <h1>Casino</h1>
+  
+app/views/lobby/index.html.erb:3
+
+Information for cause: Propshaft::MissingAssetError (The asset 'Carpet.jpg' was not found in the load path.):
+  
+app/views/lobby/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 35.5ms | GC: 8.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | GC: 8.3ms)
+Completed 200 OK in 78ms (Views: 44.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.7ms)
+
+
+Started GET "/assets/lobby-eefb9a87.css" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Started GET "/assets/carpet-a180852b.jpg" for 127.0.0.1 at 2025-02-07 12:33:15 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:34:02 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 22.9ms | GC: 2.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | GC: 2.6ms)
+Completed 200 OK in 63ms (Views: 25.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/assets/lobby-f7a14675.css" for 127.0.0.1 at 2025-02-07 12:34:03 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:34:44 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 62.9ms | GC: 31.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 65.3ms | GC: 31.2ms)
+Completed 200 OK in 99ms (Views: 66.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 31.2ms)
+
+
+Started GET "/assets/lobby-51e24441.css" for 127.0.0.1 at 2025-02-07 12:34:44 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:35:28 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:36:55 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 23.2ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | GC: 1.8ms)
+Completed 200 OK in 68ms (Views: 29.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/assets/lobby-756b8667.css" for 127.0.0.1 at 2025-02-07 12:36:55 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:36:56 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:37:10 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 18.0ms | GC: 2.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | GC: 2.4ms)
+Completed 200 OK in 60ms (Views: 19.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/assets/lobby-1d2a3609.css" for 127.0.0.1 at 2025-02-07 12:37:10 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:37:35 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 15.4ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | GC: 1.0ms)
+Completed 200 OK in 56ms (Views: 20.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/assets/lobby-45750f5b.css" for 127.0.0.1 at 2025-02-07 12:37:35 -0600
+Started GET "/" for 127.0.0.1 at 2025-02-07 12:38:37 -0600
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 37.9ms | GC: 17.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | GC: 17.8ms)
+Completed 200 OK in 92ms (Views: 39.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 29.9ms)
+
+
+Started GET "/assets/lobby-b515554c.css" for 127.0.0.1 at 2025-02-07 12:38:37 -0600
+>>>>>>> 202f82f ([#33] Add background image & CSS styling.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+=======
+>>>>>>> e68e7e7 ([#33] Add background image & CSS styling.)
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+=======
+Started GET "/" for 127.0.0.1 at 2025-02-17 10:17:31 -0600
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+)
+Caused by: Mysql2::Error::ConnectionError (Can't connect to MySQL server on '127.0.0.1:3306' (111))
+
+Information for: ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:33:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error::ConnectionError (Can't connect to MySQL server on '127.0.0.1:3306' (111)):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 10:17:33 -0600
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+)
+Caused by: Mysql2::Error::ConnectionError (Can't connect to MySQL server on '127.0.0.1:3306' (111))
+
+Information for: ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:33:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error::ConnectionError (Can't connect to MySQL server on '127.0.0.1:3306' (111)):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+  [1m[35m (102.8ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (156.7ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (176.4ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:15:28 -0600
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost')
+Caused by: Mysql2::Error (Access denied for user 'root'@'localhost')
+
+Information for: ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost'):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 11:15:30 -0600
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost')
+Caused by: Mysql2::Error (Access denied for user 'root'@'localhost')
+
+Information for: ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost'):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:17:58 -0600
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost')
+Caused by: Mysql2::Error (Access denied for user 'root'@'localhost')
+
+Information for: ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost'):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 11:18:00 -0600
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost')
+Caused by: Mysql2::Error (Access denied for user 'root'@'localhost')
+
+Information for: ActiveRecord::ConnectionNotEstablished (Access denied for user 'root'@'localhost'):
+  
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#connect'
+mysql2 (0.5.6) lib/mysql2/client.rb:97:in 'Mysql2::Client#initialize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'Class#new'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter.new_client'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:138:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#connect'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:147:in 'block in ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:144:in 'ActiveRecord::ConnectionAdapters::Mysql2Adapter#reconnect'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:669:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:668:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#reconnect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:770:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:761:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#verify!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:778:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#connect!'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:984:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.0.1) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_adapter.rb:983:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:692:in 'ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter#quote_string'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/quoting.rb:76:in 'ActiveRecord::ConnectionAdapters::Quoting#quote'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:260:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#quoted_scope'
+activerecord (8.0.1) lib/active_record/connection_adapters/mysql/schema_statements.rb:242:in 'ActiveRecord::ConnectionAdapters::MySQL::SchemaStatements#data_source_sql'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#table_exists?'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:55:in 'block in ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:418:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.0.1) lib/active_record/schema_migration.rb:54:in 'ActiveRecord::SchemaMigration#create_table'
+activerecord (8.0.1) lib/active_record/migration.rb:1431:in 'ActiveRecord::Migrator#initialize'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'Class#new'
+activerecord (8.0.1) lib/active_record/migration.rb:1279:in 'ActiveRecord::MigrationContext#open'
+activerecord (8.0.1) lib/active_record/migration.rb:763:in 'block (2 levels) in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration/pending_migration_connection.rb:8:in 'ActiveRecord::PendingMigrationConnection.with_temporary_pool'
+activerecord (8.0.1) lib/active_record/migration.rb:762:in 'block in ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'Array#each'
+activerecord (8.0.1) lib/active_record/migration.rb:761:in 'ActiveRecord::Migration.pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:740:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (102.7ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE DATABASE `casino_development` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE DATABASE `casino_test` DEFAULT CHARACTER SET `utf8mb4` /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:27:33 -0600
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) /*application='Casino'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250212035032_create_users.rb
+db/migrate/20250212035033_create_sessions.rb
+db/migrate/20250212055117_add_balance_to_users.rb
+db/migrate/20250212055215_add_username_to_users.rb
+
+
+):
+  
+activerecord (8.0.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 11:27:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250212035032_create_users.rb
+db/migrate/20250212035033_create_sessions.rb
+db/migrate/20250212055117_add_balance_to_users.rb
+db/migrate/20250212055215_add_username_to_users.rb
+
+
+):
+  
+activerecord (8.0.1) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.10) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.10) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.1) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7425966755193533820', 0) /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1 /*application='Casino'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2025-02-17 17:27:55.299266', '2025-02-17 17:27:55.299270') /*application='Casino'*/[0m
+Migrating to CreateUsers (20250212035032)
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email_address` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) /*application='Casino'*/[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email_address` ON `users` (`email_address`) /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20250212035032') /*application='Casino'*/[0m
+Migrating to CreateSessions (20250212035033)
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE `sessions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `ip_address` varchar(255), `user_agent` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_sessions_on_user_id` (`user_id`), CONSTRAINT `fk_rails_758836b4f0`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+) /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20250212035033') /*application='Casino'*/[0m
+Migrating to AddBalanceToUsers (20250212055117)
+  [1m[35m (6.5ms)[0m  [1m[35mALTER TABLE `users` ADD `balance` decimal(12,2) DEFAULT 0.0 NOT NULL /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20250212055117') /*application='Casino'*/[0m
+Migrating to AddUsernameToUsers (20250212055215)
+  [1m[35m (5.9ms)[0m  [1m[35mALTER TABLE `users` ADD `username` varchar(16) NOT NULL /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20250212055215') /*application='Casino'*/[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7425966755193533820') /*application='Casino'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:28:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 1366ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:28:12 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 167.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 594.1ms | GC: 6.1ms)
+Completed 200 OK in 2075ms (Views: 684.1ms | ActiveRecord: 27.8ms (0 queries, 0 cached) | GC: 6.1ms)
+
+
+Started GET "/assets/lobby-53d43dba.css" for 127.0.0.1 at 2025-02-17 11:28:15 -0600
+Started GET "/assets/carpet-a180852b.jpg" for 127.0.0.1 at 2025-02-17 11:28:15 -0600
+Started GET "/passwords/new" for 127.0.0.1 at 2025-02-17 11:28:18 -0600
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 22.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | GC: 0.0ms)
+Completed 200 OK in 649ms (Views: 28.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:29:39 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+Completed 500 Internal Server Error in 1068ms (ActiveRecord: 5.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  
+NameError (undefined local variable or method 'session_params_password' for an instance of SessionsController):
+  
+app/controllers/sessions_controller.rb:16:in 'SessionsController#create'
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:30:01 -0600
+Processing by LobbyController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 653ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:30:02 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | GC: 1.1ms)
+Completed 200 OK in 635ms (Views: 10.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2025-02-17 11:30:03 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.6ms | GC: 2.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | GC: 2.3ms)
+Completed 200 OK in 669ms (Views: 18.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2025-02-17 11:30:22 -0600
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "user" => {"username" => "gambleman", "email_address" => "[FILTERED]", "password" => "[FILTERED]", "password_confirmation" => "[FILTERED]"}, "commit" => "Create account"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Exists? (6.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email_address` = 'chuchma1@myumanitoba.ca' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO `users` (`email_address`, `password_digest`, `created_at`, `updated_at`, `balance`, `username`) VALUES ('chuchma1@myumanitoba.ca', '$2a$12$YYAtfoeD/dj88aZ0nO5bcO4Am6pSQXRDGUPETZi1RvyLb1JQHA0pK', '2025-02-17 17:30:23.277380', '2025-02-17 17:30:23.277380', 0.0, 'gambleman') /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:11:in 'UsersController#create'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email_address` = 'chuchma1@myumanitoba.ca' LIMIT 1 /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:13:in 'UsersController#create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.2ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:30:23.696723', '2025-02-17 17:30:23.696723') /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='users'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1163ms (ActiveRecord: 15.7ms (5 queries, 0 cached) | GC: 19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:30:23 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (1.1ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 7.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.0ms)
+Completed 200 OK in 741ms (Views: 15.1ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/RedVelvetCarpet-5a50c49c.jpg" for 127.0.0.1 at 2025-02-17 11:30:24 -0600
+Started GET "/assets/horse1-a797efc9.png" for 127.0.0.1 at 2025-02-17 11:30:24 -0600
+Started GET "/assets/UnderConstructionTape-c64737dd.png" for 127.0.0.1 at 2025-02-17 11:30:24 -0600
+Started POST "/lobby/horse_racing" for 127.0.0.1 at 2025-02-17 11:30:30 -0600
+Processing by LobbyController#horse_racing as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 1 LIMIT 1 /*action='horse_racing',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Completed 500 Internal Server Error in 711ms (ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'home_path' for an instance of LobbyController):
+  
+app/controllers/lobby_controller.rb:17:in 'LobbyController#horse_racing'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-17 11:30:33 -0600
+Started GET "/users/new" for 127.0.0.1 at 2025-02-17 11:30:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.0ms)
+Completed 200 OK in 710ms (Views: 6.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2025-02-17 11:30:34 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.0ms)
+Completed 200 OK in 589ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:30:35 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | GC: 0.0ms)
+Completed 200 OK in 518ms (Views: 8.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:30:37 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 0.0ms)
+Completed 200 OK in 525ms (Views: 10.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:30:39 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (4.8ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:30:40.015751', '2025-02-17 17:30:40.015751') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 681ms (ActiveRecord: 6.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:30:40 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 2 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 618ms (Views: 5.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2025-02-17 11:31:13 -0600
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 2 LIMIT 1 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mSession Destroy (7.1ms)[0m  [1m[31mDELETE FROM `sessions` WHERE `sessions`.`id` = 2 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 670ms (ActiveRecord: 8.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:31:13 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.0ms)
+Completed 200 OK in 635ms (Views: 8.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2025-02-17 11:31:35 -0600
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.0ms)
+Completed 200 OK in 547ms (Views: 9.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:31:38 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.5ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:31:39.285463', '2025-02-17 17:31:39.285463') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 710ms (ActiveRecord: 5.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:31:39 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (1.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 3 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 641ms (Views: 7.2ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/lobby/horse_racing" for 127.0.0.1 at 2025-02-17 11:31:43 -0600
+Processing by LobbyController#horse_racing as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (1.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 3 LIMIT 1 /*action='horse_racing',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+Completed 500 Internal Server Error in 635ms (ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'home_path' for an instance of LobbyController):
+  
+app/controllers/lobby_controller.rb:17:in 'LobbyController#horse_racing'
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:31:45 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | GC: 0.0ms)
+Completed 200 OK in 638ms (Views: 13.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:31:46 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 635ms (Views: 6.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:31:48 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.3ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:31:49.214462', '2025-02-17 17:31:49.214462') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 609ms (ActiveRecord: 5.1ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:31:49 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 4 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 627ms (Views: 4.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2025-02-17 11:31:51 -0600
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 4 LIMIT 1 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mSession Destroy (2.1ms)[0m  [1m[31mDELETE FROM `sessions` WHERE `sessions`.`id` = 4 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 643ms (ActiveRecord: 3.7ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:31:51 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | GC: 0.0ms)
+Completed 200 OK in 634ms (Views: 9.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2025-02-17 11:31:53 -0600
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 11.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | GC: 0.0ms)
+Completed 200 OK in 657ms (Views: 16.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:32:12 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "badaccount", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'badaccount' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+Completed 500 Internal Server Error in 708ms (ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'session_params_password' for an instance of SessionsController):
+  
+app/controllers/sessions_controller.rb:16:in 'SessionsController#create'
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:35:32 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 1235ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:35:34 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 243.3ms | GC: 7.3ms)
+Completed 200 OK in 1095ms (Views: 265.6ms | ActiveRecord: 27.8ms (0 queries, 0 cached) | GC: 7.3ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:35:41 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "badaccount", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'badaccount' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+Completed 500 Internal Server Error in 856ms (ActiveRecord: 5.3ms (1 query, 0 cached) | GC: 20.7ms)
+
+
+  
+ArgumentError (One or more finder arguments are required):
+  
+app/controllers/sessions_controller.rb:16:in 'SessionsController#create'
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:39:09 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 1105ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:39:10 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 15.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 249.2ms | GC: 7.8ms)
+Completed 200 OK in 1054ms (Views: 276.8ms | ActiveRecord: 26.5ms (0 queries, 0 cached) | GC: 8.2ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:39:13 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 537ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 7.9ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:39:13 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | GC: 2.2ms)
+Completed 200 OK in 631ms (Views: 10.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:39:25 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "badaccount", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 451ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:39:25 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | GC: 0.0ms)
+Completed 200 OK in 620ms (Views: 9.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:39:30 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 534ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:39:31 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 663ms (Views: 7.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:40:39 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 1054ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:40:41 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 16.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 236.4ms | GC: 6.6ms)
+Completed 200 OK in 999ms (Views: 255.8ms | ActiveRecord: 28.8ms (0 queries, 0 cached) | GC: 6.6ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:40:43 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (4.1ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:40:44.688977', '2025-02-17 17:40:44.688977') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 948ms (ActiveRecord: 12.3ms (2 queries, 0 cached) | GC: 23.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:40:44 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 5 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | GC: 0.0ms)
+Completed 200 OK in 678ms (Views: 15.5ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:40:48 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.0ms)
+Completed 200 OK in 636ms (Views: 10.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:40:51 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (2.9ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:40:51.930535', '2025-02-17 17:40:51.930535') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 642ms (ActiveRecord: 5.1ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:40:51 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 6 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 647ms (Views: 5.3ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:40:53 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 656ms (Views: 8.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:40:57 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email_address` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:16:in 'SessionsController#create'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 906ms (ActiveRecord: 2.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:40:58 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.2ms)
+Completed 200 OK in 635ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/passwords/new" for 127.0.0.1 at 2025-02-17 11:40:59 -0600
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/new.html.erb within layouts/application (Duration: 21.9ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | GC: 1.8ms)
+Completed 200 OK in 696ms (Views: 33.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:41:02 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (4.4ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:41:03.372688', '2025-02-17 17:41:03.372688') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 593ms (ActiveRecord: 6.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:41:03 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 7 LIMIT 1 /*action='index',application='Casino',controller='lobby'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 4.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 626ms (Views: 9.7ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_DIR[0m, [36mCASINO_DB_ROOT_PASSWORD[0m, and [36mCASINO_DB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:42:26 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC /*application='Casino'*/[0m
+Processing by LobbyController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 190.4ms | GC: 4.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 271.9ms | GC: 14.3ms)
+Completed 200 OK in 1594ms (Views: 301.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.8ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2025-02-17 11:42:31 -0600
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (4.1ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 7 LIMIT 1 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mSession Destroy (5.4ms)[0m  [1m[31mDELETE FROM `sessions` WHERE `sessions`.`id` = 7 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 751ms (ActiveRecord: 36.9ms (2 queries, 0 cached) | GC: 13.7ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:42:32 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | GC: 0.0ms)
+Completed 200 OK in 672ms (Views: 27.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:42:35 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.1ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:42:36.595890', '2025-02-17 17:42:36.595890') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 864ms (ActiveRecord: 9.1ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:42:36 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 5.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | GC: 0.0ms)
+Completed 200 OK in 634ms (Views: 11.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2025-02-17 11:42:42 -0600
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (1.4ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 8 LIMIT 1 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mSession Destroy (3.2ms)[0m  [1m[31mDELETE FROM `sessions` WHERE `sessions`.`id` = 8 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 651ms (ActiveRecord: 5.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:42:42 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.0ms)
+Completed 200 OK in 647ms (Views: 6.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2025-02-17 11:42:48 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "session" => {"username" => "gambleman", "password" => "[FILTERED]"}, "commit" => "Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'gambleman' LIMIT 1 /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:14:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.9ms)[0m  [1m[32mINSERT INTO `sessions` (`user_id`, `ip_address`, `user_agent`, `created_at`, `updated_at`) VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', '2025-02-17 17:42:49.410797', '2025-02-17 17:42:49.410797') /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*action='create',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 863ms (ActiveRecord: 6.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-17 11:42:49 -0600
+Processing by LobbyController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lobby/index.html.erb within layouts/application
+  Rendered lobby/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 640ms (Views: 8.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2025-02-17 11:42:50 -0600
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]"}
+  [1m[36mSession Load (1.0ms)[0m  [1m[34mSELECT `sessions`.* FROM `sessions` WHERE `sessions`.`id` = 9 LIMIT 1 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mSession Destroy (2.9ms)[0m  [1m[31mDELETE FROM `sessions` WHERE `sessions`.`id` = 9 /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Casino',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:49:in 'Authentication#terminate_session'
+Redirected to http://127.0.0.1:3000/session/new
+Completed 302 Found in 666ms (ActiveRecord: 6.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:42:51 -0600
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.0ms)
+Completed 200 OK in 640ms (Views: 9.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2025-02-17 11:42:53 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 638ms (Views: 10.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+>>>>>>> ff9b2ed ([#39] fix session login bug and allow unauthenticated access for the casino lobby)

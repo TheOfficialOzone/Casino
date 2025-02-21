@@ -1,7 +1,6 @@
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-
   ## Test valid insertions
 
   test "should insert user" do
@@ -19,7 +18,6 @@ class UserTest < ActiveSupport::TestCase
     assert user.save
   end
 
-
   ## Test missing parameters
 
   test "must provide email address" do
@@ -36,7 +34,6 @@ class UserTest < ActiveSupport::TestCase
     user = User.new(email_address: "user3@email.com", username: "user3")
     assert_not user.save
   end
-
 
   ## Test duplicate values
 
@@ -59,7 +56,6 @@ class UserTest < ActiveSupport::TestCase
     user = User.new(email_address: "user3@email.com", username: "ONE1", password: "password")
     assert_not user.save
   end
-
 
   ## Validate parameters
 
@@ -88,7 +84,6 @@ class UserTest < ActiveSupport::TestCase
     assert_not user.save
   end
 
-
   ## Test balance values
 
   test "balance can change" do
@@ -115,5 +110,4 @@ class UserTest < ActiveSupport::TestCase
     user.balance = -1
     assert_not user.save
   end
-
 end
