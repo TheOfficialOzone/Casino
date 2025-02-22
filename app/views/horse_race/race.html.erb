@@ -30,7 +30,7 @@
 <script>
   <% unless @debug %>
   // Redirect back to bet page after the race is done
-  setTimeout(function() {
+  setInterval(function() {
       const csrfToken = document.querySelector('meta[name="csrf-token"]');
       fetch("<%= url_for(controller: 'horse_race', action: 'resolve_race') %>", {
 	  method: 'POST',
