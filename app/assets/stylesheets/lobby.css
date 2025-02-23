@@ -10,7 +10,7 @@ p {
     color: white;
 }
 
-body {
+#lobby-body {
     /*Set Background Image*/
     background-image: url('carpet.jpg');
     background-repeat: repeat;

@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# Create new horses
+HORSES_TOTAL = 6
+
+HORSES_TOTAL.times do |_|
+  Horse.random.save
+end
