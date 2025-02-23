@@ -59,4 +59,4 @@ build-iPhoneSimulator/
 # Used by MacOS for assigning folder attributes
 .DS_Store
 
-log/development.log
+log/*
