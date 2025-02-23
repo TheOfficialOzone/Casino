@@ -1,17 +1,18 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: "MyHorse1"
   speed: 1.5
-  image: MyString
-  timing: MyString
+  image: "horse1.png"
+  timing: "ease-in"
   place_odds: 1.5
   straight_odds: 1.5
-
-two:
-  name: MyString
-  speed: 1.5
-  image: MyString
-  timing: MyString
-  place_odds: 1.5
-  straight_odds: 1.5
+  show_odds: 1.5
+#
+#two:
+#  name: MyString
+#  speed: 1.5
+#  image: MyString
+#  timing: MyString
+#  place_odds: 1.5
+#  straight_odds: 1.5
