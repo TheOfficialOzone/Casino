@@ -8,11 +8,12 @@ one:
   place_odds: 1.5
   straight_odds: 1.5
   show_odds: 1.5
-#
-#two:
-#  name: MyString
-#  speed: 1.5
-#  image: MyString
-#  timing: MyString
-#  place_odds: 1.5
-#  straight_odds: 1.5
+
+two:
+  name: "MyHorse2"
+  speed: 2.0
+  image: "horse1.png"
+  timing: "ease-in"
+  place_odds: 1.5
+  straight_odds: 1.5
+  show_odds: 1.5
