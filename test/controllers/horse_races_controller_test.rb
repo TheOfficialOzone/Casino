@@ -1,6 +1,6 @@
 require "test_helper"
 
-class HorseRacesControllerTest < ActionDispatch::IntegrationTest
+class HorseRacesControllerTest < ActionDispatch::IntegrationTest # rubocop:disable Metrics/ClassLength
   def login
     post session_path, params: { session: { username: "one1", password: "password" } }
     assert_response :redirect
@@ -31,8 +31,6 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
 
   def does_wager_not_pay(kind, place)
     user = User.first
-    user_id = user.id
-    balance = user.balance
     winner = Horse.order(:speed)[place]
     bet_amount = 1.00
 
@@ -148,26 +146,26 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
 
   test "Creating extra horses" do
     horse_count = Horse.count
-    Horse.create_new_horse()
+    Horse.create_new_horse
     assert Horse.count == horse_count + 1
   end
 
   test "Removing too many horses" do
-    Horse.remove_random_horses(amount = Horse.count + 100)
-    assert Horse.count == 0
+    Horse.remove_random_horses(Horse.count + 100)
+    assert Horse.count.zero?
   end
 
   test "Removing all horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
   end
 
   test "Check all horses are eventually removed" do
     starting_horses = Horse.all.uniq # Uniq is needed to clone the elements (Otherwise it's a pointer)
 
-    for _ in (1..200) do # Odds of this failing are 5/6^200... essentially 0
-      Horse.remove_random_horses(amount = 1)
-      Horse.create_new_horse()
+    (1..200).each do |_| # Odds of this failing are 5/6^200... essentially 0
+      Horse.remove_random_horses(1)
+      Horse.create_new_horse
     end
 
     assert (starting_horses | Horse.all).count == 12 # The starting horses and remaining horses are entirely unique
@@ -175,33 +173,33 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
 
   test "Remove Horse, Add Horse" do
     horse_count = Horse.count
-    Horse.remove_random_horses(amount = 1)
+    Horse.remove_random_horses(1)
     assert Horse.count == horse_count - 1
-    Horse.create_new_horse()
+    Horse.create_new_horse
     assert Horse.count == horse_count
   end
 
   test "Regenerate all horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
   end
 
   test "Generated Horses are unique to one-another" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
     # Checks the horses are unique
     unique_horses = Horse.all.uniq
@@ -210,12 +208,12 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
 
   test "Generated Horses are unique to pre-existing horses" do
     horse_count = Horse.count
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == horse_count + 6
     # Checks the horses are unique
     unique_horses = Horse.all.uniq
@@ -223,14 +221,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "Betting on one generated horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     # Wagers are placed
@@ -241,14 +239,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "Betting on multiple generated horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     # Wagers are placed
@@ -261,14 +259,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "Betting on one generated horse multiple times" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     # Wagers are placed
@@ -281,14 +279,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "Payout when betting & winning on generated horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     login
@@ -305,14 +303,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "No payout when betting & losing on generated horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     login
@@ -335,14 +333,14 @@ class HorseRacesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "Hit & Miss bet on generated horses" do
-    Horse.remove_random_horses(amount = Horse.count)
-    assert Horse.count == 0
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
-    Horse.create_new_horse()
+    Horse.remove_random_horses(Horse.count)
+    assert Horse.count.zero?
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
+    Horse.create_new_horse
     assert Horse.count == 6
 
     login
