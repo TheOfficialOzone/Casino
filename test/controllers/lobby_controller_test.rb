@@ -45,8 +45,6 @@ class LobbyControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to horse_race_betting_path
   end
 
-
   test "regenerate all horse" do
-
   end
 end

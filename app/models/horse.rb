@@ -23,11 +23,11 @@ class Horse < ApplicationRecord
   # Remove Horse at random
   def self.remove_random_horses(amount = 1)
     amount.times do |_|
-      if Horse.count > 0
-        unlucky_horse = Horse.choose_random_horse_based_on_performance
-        puts "#{unlucky_horse.name} has passed..."
-        unlucky_horse.destroy # Remove unlucky horse
-      end
+      next unless Horse.count.positive?
+
+      unlucky_horse = Horse.choose_random_horse_based_on_performance
+      puts "#{unlucky_horse.name} has passed..."
+      unlucky_horse.destroy # Remove unlucky horse
     end
   end
 
