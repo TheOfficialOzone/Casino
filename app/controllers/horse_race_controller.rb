@@ -10,6 +10,8 @@ class HorseRaceController < ApplicationController
     @race_time = (Horse.maximum(:speed) * 1000) + @race_time_after_finish
   end
 
+  def betting; end
+
   # Race is over, pay the money to winning wagers
   def resolve_race
     payout_wagers
@@ -39,8 +41,10 @@ class HorseRaceController < ApplicationController
     wager = create_wager(params)
     wager.save # add wager to database
 
+    # puts "$#{Current.session.user.balance}"
     Current.session.user.balance -= wager.amount # remove money from the user's bankaccount
     Current.session.user.save # update user
+    # puts "$#{Current.session.user.balance}"
 
     redirect_to horse_race_betting_path
   end
@@ -50,7 +54,7 @@ class HorseRaceController < ApplicationController
     horse  = Horse.find(params[:horse])
     kind   = params[:kind].to_s
     amount = params[:amount].to_f
-    puts "#{kind.to_s.capitalize} Bet of $#{format('%.2f', amount)} on '#{horse}'"
+    puts "#{kind.to_s.capitalize} Bet of $#{format('%.2f', amount)} on '#{horse.name}'"
 
     Wager.new(user: user, horse: horse, amount: amount, kind: kind)
   end
