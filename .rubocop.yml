@@ -1,0 +1,6 @@
+inherit_from: .rubocop_todo.yml
+
+# Fix error for schema version in db/schema.rb
+Style/NumericLiterals:
+  AllowedPatterns:
+    - '\d{4}_\d{2}_\d{2}_\d{6}'
