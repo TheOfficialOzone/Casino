@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'chat.css', media: 'all' %>
+
+<div class="chat-div">
+    <div class="chat-header">
+    </div>
+    <div class="chat-text" id="messages">
+    </div>
+    <div class="chat-footer">
+        <%= form_with(url: chat_send_url, method: :post, local: true) do |form| %>
+            <%= form.text_field :input_string, maxlength: 30, class: "chat-input" %>
+        <%= form.submit "Send", class: "send-button" %>
+        <% end %>
+    </div>
+</div>

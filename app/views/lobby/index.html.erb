@@ -12,7 +12,7 @@
             Welcome to Casino! <br>
             We are currently under construction but feel free to enjoy some horse races while we finish up the rest.
         </p>
-        
+
     </main>
     <div class="lobby-account-info">
         <%= button_to "Logout", session_path, method: :delete %>
@@ -27,5 +27,6 @@
     <div class="lobby-game" id="slots">
         <button class="coming-soon">Slots</button>
     </div>
+    <%= render 'shared/chat' %>
 
 <body>
