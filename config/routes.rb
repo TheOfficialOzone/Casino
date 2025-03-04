@@ -20,9 +20,12 @@ Rails.application.routes.draw do
   get "/lobby", to: "lobby#index"
   post "/lobby/logout", to: "lobby#logout", as: :logout_lobby
   post "/lobby/horse_racing", to: "lobby#horse_racing", as: :horse_racing_lobby
+  post "/lobby/roulette", to: "lobby#roulette", as: :roulette_lobby
 
   get "horse_race/race"
   get "horse_race/betting"
+
+  get "roulette/roulette_board"
 
   post 'horse_race/debug_skip_to_race', to: 'horse_race#debug_skip_to_race', as: 'debug_skip_to_race'
   post 'horse_race/submit_bet', to: 'horse_race#submit_bet', as: 'submit_bet'
