@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>roulette</title>
-  <%= stylesheet_link_tag 'roulette_board.css', media: 'all' %>
+  <%= stylesheet_link_tag 'roulette_board.css' %>
 </head>
 
-<body>
+<body class="roulette-page">
 
   <div class="roulette">
 			<table>
@@ -370,12 +370,9 @@
 				</div>
 			</div>
 		</div>
-	Your bets:
 	<div style="width:400px">
 		<button onclick="Place()">Place bet</button>
 		<button onclick="Reset()">Reset</button>
-		<div id='bets' style="float:left;width: 200px;height:150px;overflow-y:scroll;"></div>
-		<div id='balance' style="float:left;width:200px;">Balance: 1.00 ETH</div><br>
 		<div id='result' style="float:left;width:200px;"></div><br>
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
